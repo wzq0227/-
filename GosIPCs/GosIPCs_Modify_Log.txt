@@ -1,0 +1,808 @@
+GosIPCs 代码修改 log
+
+
+【2019-03-07】：Modify by shenyuanluo
+1、修改 iOSConfigSDK，将获取 CBS 地址接口改为“不加密”
+
+
+【2019-03-06】：Modify by husx
+1. 修复侧滑返回，主页可能被tabbar部分遮挡的问题。让侧滑更丝滑~
+
+
+【2019-03-06】：Modify by shenyuanluo
+1、添加推送消息页面跳转云存储播放页面
+2、版本改为：1.0.1（1）
+
+
+【2019-03-06】：Modify by kuangweiqun
+1、修复分享设备失败
+2、添加旋转图像视频180度”功能
+3，修复全双工+半双工按对讲后无任何提示信息
+4，修复APP在读取设备指令集时无读取过程显示
+5，修复视频预览过程中，下面的对讲按钮会自动闪烁
+
+
+【2019-03-05】：Modify by husx
+1. 更新剪切界面 关于云存储回放的剪切逻辑
+2. 更新云存储播放界面与TF卡流播 关于推送播放的逻辑
+3. 完善云存储播放与TF卡流播 封装的播放器逻辑
+4. 更新翻译
+
+【2019-03-05】：Modify by shenyuanluo
+1、修改 iOSDevSDK，添加 SD 卡回放操作结果回调
+
+
+【2019-03-04】：Modify by shenyuanluo
+1、修改 iOSPlayerSDK，添加解码 H264 文件获取预览图单独接口
+
+
+【2019-03-01】：Modify by 罗乐
+1.登录、注册、找回页增加国别选择。
+
+
+【2019-03-01】：Modify by husx
+1. 补充前一版本更改记录：修复切换日期后当天数据无法显示的问题
+2. 完善剪切功能
+3. 增加播放一定时间后时间轴恢复继续播放
+4. 增加定时获取数据
+5. 修复日历左右切换时，时间轴不响应的问题
+6. 完善进入剪切界面，返回可以继续播放的功能
+
+
+【2019-03-01】：Modify by husx
+1. 修复云存储播放代理未触发的问题
+
+
+【2019-03-01】：Modify by husx
+1. 增加剪切界面
+2. 完善云存储与TF卡 播放功能
+3. 修改存储视频至相册的方法名
+4. 修复IPCPlay控制器重连计数未重置的问题
+5. 在Goscam_Info.plist增加权限描述
+
+
+【2019-03-01】：Modify by shenyuanluo
+1、修改 iOSDevSDK，添加 SD 卡数据流停止接口
+2、修改 iOSPlayerSDK，解决解码 SDK 录像流状态无法回调 bug
+
+
+【2019-03-01】：Modify by kuangweiqun
+1、修复设备分享失败问题(设备权限有误)
+2、添加保存视频到本地相册
+
+
+【2019-02-26】：Modify by kuangweiqun
+1、修复了全景360切换显示模式后不转动的bug。
+2、全景360修复声音开关偶尔错误的bug。
+3、全景360适配全屏显示。
+
+
+【2019-02-26】：Modify by shenyuanluo
+1、修改 iOSDevSDK，修改打开/关闭数据流接口，添加数据流类型指定支持
+
+
+【2019-02-22】：Modify by shenyuanluo
+1、修改 iOSPlayerSDK，添加解码 SD 卡录制 H264文件相关接口和回调
+
+
+【2019-02-22】：Modify by kuangweiqun
+1、漏提文件，导致工程编译不过，重新添加。
+
+
+【2019-02-21】：Modify by kuangweiqun
+1、添加了VR360的列表显示
+2、完善了部分VR播放器的播放
+
+
+【2019-02-21】：Modify by husx
+1. NSLog -> GosLog
+2. 修复TF卡流播数据反馈处理异常的问题
+
+
+【2019-02-20】：Modify by shenyuanluo
+1、添加设备连接状态管理接口
+2、修改 iOSConfigSDK，添加获取 SD 卡告警录像列表接口
+3、修改 iOSPlayerSDK，添加 VR 解码数据回调接口
+
+
+【2019-02-20】：Modify by husx
+1. 添加TF卡流播控制器
+2. 初步完成TF获取视频数据及UI
+3. 修复GosDevManager的deviceWithId:方法获取设备模型总是第一个的问题
+4. 删除VR 界面相关冗余代码
+
+
+【2019-02-19】：Modify by kuangweiqun
+1、在设备列表添加NVR 全景360的Cell。
+2、在添加设备时添加失败后弹框添加网络检测界面。
+
+
+【2019-02-19】：Modify by shenyuanluo
+1、修改 MedianManager，添加云存储裸流（H264）预览图媒体文件类型支持
+2、修改 MedianManager，添加文件名后缀大小写兼容
+
+
+【2019-02-19】：Modify by husx
+1. GosHUD添加通用Loading方法
+2. 更新时间轴代理方法、接口、UI
+3. 基本云存储回放功能
+4. 修复下载Api超时的问题
+
+
+【2019-02-18】：Modify by shenyuanluo
+1、修改 iOSPlayerSDK，添加解码 H264 数据回调
+2、修改 iOSPlayerSDK，添加剪切 H264 并转换为 Mp4 接口
+
+
+【2019-02-15】：Modify by shenyuanluo
+1、修改 iOSPlayerSDK，添加解码 H264 状态回调
+2、修改 iOSPlayerSDK，添加设置自动渲染接口
+
+
+【2019-02-15】：Modify by kuangweiqun
+1、加了一个关闭摇篮曲的声音 失败提示
+2、事件回放添加空白占位图及文字
+3、加了一个事件回放列表界面的编辑小圆圈的默认隐藏
+4、事件回放具体到某天点击编辑，数据全选、取消全选的显示问题。
+
+
+【2019-02-14】：Modify by shenyuanluo
+1、修改 MedianManager，添加云存储裸流（H264）媒体文件、TF卡录像（视频流）媒体文件类型支持
+2、修改 iOSDevSDK，添加 SD 卡录像（视频流）回放获取预览图接口
+3、修改 iOSPlayerSDK，添加解码 H264 文件接口
+4、修改 iOSPlayerSDK，添加获取 H264 文件指定时间预览图接口
+
+
+【2019-02-14】：Modify by kuangweiqun
+1、扫描二维码界面添加不再提醒选择框。（添加设备+修改WiFi密码界面）
+
+
+【2019-02-13】：Modify by kuangweiqun
+1、修改引导图下的pagecontroller为自定义图片。
+
+
+【2019-02-13】：Modify by shenyuanluo
+1、解决请求设备分享列表失败时，代理无法返回问题
+2、解决账号空列表时，已有列表数据缓存无法及时更新问题
+
+
+【2019-01-27 18:00】：Modify by kuangweiqun
+1、完善了删除设备及修改设备名回到设备列表刷新改变数据
+2、完善了当没有云台控制时，隐藏云台控制按钮
+3、SD卡回放界面适配小屏手机
+4、分享好友字段错误修复
+
+
+【2019-01-27 15:00】：Modify by kuangweiqun
+1、播放实时视频界面拍照+声音按钮适配了5S，录像时，图标切换及显示REG。
+2、完善了设备列表界面，无设备时的占位图显示
+
+
+【2019-01-27】：Modify by 罗乐
+1、修改绑定接口。
+2、修复设备添加一些UI bug.
+
+
+【2019-01-27】：Modify by shenyuanluo
+1、解决空账号多次拉取设备列表时，处理空列表不及时问题
+2、修改 iOSConfigSDK，简化绑定接口【bindDeviceId:deviceName:deviceType:ownType:account】为【bindDevice:toAccount:】
+3、修改 iOSConfigSDK，简化解绑接口【unBindDeviceId:account:】为【unBindDevice:fromAccount:】
+4、修改设备列表页，添加修改设备属性通知监听
+5、解决获取 CBS 地址失败后，无法再次轮询查询 CBS 地址问题
+
+
+【2019-01-25】：Modify by shenyuanluo
+1、解决登录空(没有设备)账号后，没有及时停止刷新操作问题
+2、解决登录空(没有设备)账号后，没有停止多余查询操作问题
+3、初步添加 VR 播放
+
+
+【2019-01-22】：Modify by kuangweiqun
+1、增加了多国语言（德语+法语+西班牙语）
+2、完善了设备不在线获取不到能力集，默认显示，好友分享+WiFi设置+设备信息+相册四大功能
+
+
+【2019-01-21】：Modify by kuangweiqun
+1、修复了保存图片到本地会奔溃的问题、保存到本地创建相册失败问题。
+2、完成了网络检测接口联调。
+
+【2019-01-18】：Modify by shenyuanluo
+1、修改 iOSSmartSDK，解决扫描 ‘全景360’设备二维码解析出错问题
+2、修改 iOSConfigSDK，添加网络检测-查询 CBS 地址接口
+3、修改 iOSConfigSDK，添加检测服务器地址是否可达接口
+
+
+【2019-01-17】：Modify by shenyuanluo
+1、解决 archive 时无法 link echocancel.framework 问题
+2、修改 初始化推送开关取反问题
+
+
+【2019-01-17】：Modify by kuangweiqun
+1.修改了登录区域默认选择问题（和上次登录保持一致）及根据选择的区域对账号占位符问题。
+2、修改了Block里的强引用问题。
+3、修改了方法名的格式问题。
+4、添加了图片下载到本地相册功能。
+
+
+【2019-01-17】：Modify by 罗乐
+1.修改了一些与设计图不符的UI问题。
+
+
+【2019-01-17】：Modify by kuangweiqun
+1、修复注册，找回密码，密码格式不符合要求的提示，添加了少的中英文翻译。
+2、修复了成功和失败的弹框不隐藏问题。
+
+
+【2019-01-16】：Modify by shenyuanluo
+1、解决手机消息中心的推送消息后，消息列表和消息详情页没有同步更新 bug
+2、添加全双工对讲功能
+3、修改 iOSDevSDK，添加发送(实时)对讲语音音频数据接口
+4、修改 iOSPlayerSDK，添加回音消除接口
+
+
+【2019-01-16】：Modify by kuangweiqun
+1、完善IOT推送界面及代码逻辑
+
+
+【2019-01-15】：Modify by shenyuanluo
+1、修改 iOSConfigSDK，添加查询 IOT-声光报警器-开关状态接口
+2、修改 MediaManager，解决获取封面/推送图片已提供文件名而导致问题读取错误问题
+
+
+【2019-01-14】：Modify by shenyuanluo
+1、解决浏览某一设备推送消息列表时，非当前设备推送消息没过滤问题
+
+
+【2019-01-12】：Modify by kuangweiqun
+1、修复了情景任务触发不报警的bug
+
+
+【2019-01-12】：Modify by kuangweiqun
+1、完善情景任务
+2、完善添加传感器
+3、完善网络检测UI界面
+4、完善设置界面的云套餐提示
+
+
+【2019-01-12】：Modify by shenyuanluo
+1、将 ‘RealReachability’ 替换为 ‘YYReachability’，以解决在 4G 网络时监测出错问题
+2、添加全局网络监控变换通知：kCurNetworkChangeNotify
+3、解决注册的用户类型、找回密码的用户类型同步问题
+
+
+【2019-01-11】：Modify by shenyuanluo
+1、添加 TF 卡媒体文件列表正在下载时，同时可以‘编辑-删除’逻辑
+2、修改 TF 卡媒体文件下载管理器：TFDownloadManager，添加停止下载指定‘文件-列表’接口
+3、修改 iOSConfigSDK，添加‘定制-APP’类型枚举，默认：App_GOSCAM
+4、修改登录页面，添加输入账号时，列出匹配的历史账号供选择
+5、修改登录、注册、找回密码按钮 style
+
+
+【2019-01-10】：Modify by 罗乐
+1、新增日语翻译
+
+
+【2019-01-10】：Modify by shenyuanluo
+1、添加注销通知
+2、统一管理’通知-key‘ 到 GlobalExport 中
+
+
+【2019-01-09】：Modify by shenyuanluo
+1、优化 TF 卡媒体文件下载逻辑（优先下载当前选项卡类型文件）
+2、修改 iOSConfigSDK，修改 TF 卡录制媒体文件信息模型类，添加文件列表解析
+3、修改 推送消息列表、TF媒体文件列表 Icon 为懒加载模式，优化滑动列表性能
+4、添加 TF 卡媒体文件下载提示 Icon
+5、修改 iOSConfigSDK，添加 IOT-情景任务相关接口：添加、删除、修改、查询
+
+
+【2019-01-08】：Modify by shenyuanluo
+1、修改 iOSConfigSDK，添加 ’声光报警器‘相关接口：配对、设置开关、停止报警
+2、修改 iOSConfigSDK，修改 ’支持 IOT‘ 能力集为按位取：SupportIotSensorType
+3、修改 iOSConfigSDK，添加 ’服务器 IOT-传感器‘相关接口：添加、删除、修改、查询
+4、删除’DeviceList‘ 登录分类
+
+
+【2019-01-07】：Modify by husx
+1. 完善时间轴
+2. 完成云存储回放界面基本数据获取
+3. 完善并修复ApiManager相关问题
+4. 完成云存储的控制界面的基本封装
+
+
+【2019-01-07】：Modify by shenyuanluo
+1、解决正在下载 TF 卡媒体文件时切换视频/图片列表出现 cell 绘制不及时导致崩溃问题
+2、添加 TF 卡媒体列表‘停止下载’提示框长时间不操作时，当下载完成后自动消失逻辑
+3、修改 iOSDevSDK，添加 TF 卡媒体文件开始下载结果回调
+4、添加准 IOT-传感器相关接口：准备添加、查询、开始添加、删除、修改
+
+
+【2019-01-05】：Modify by shenyuanluo
+1、添加 TF 卡媒体文件下载管理器：TFDownloadManager
+2、添加 TF 卡媒体文件列表【‘模拟’多任务】下载处理
+
+
+【2019-01-04】：Modify by kuangweiqun
+1、修复了时间校验的bug(获取当前时间戳提交给服务器)
+2、将翻译通用抽取
+3、修复了相册小bug(选中删除按钮变红变黑)
+
+
+【2019-01-04】：Modify by 罗乐
+1、增加添加设备成功后进行设备命名的弹框。
+
+
+【2019-01-04】：Modify by shenyuanluo
+1、修改 iOSDevSDK，添加‘停止’下载 TF 录制文件接口
+2、添加 TF 卡录制视频文件列表下载、播放逻辑
+3、添加 TF 卡图片文件浏览功能
+
+
+【2019-01-03】：Modify by husx
+1. 完成云存储回放界面展示
+2. 添加下载Api
+3. 添加云存储回放界面的图片文件
+4. 封装云存储回放控制Bar
+
+
+【2019-01-03】：Modify by shenyuanluo
+1、修改 iOSConfigSDK，添加删除 TF 卡录制文件接口
+2、添加 TF 卡录制文件(视频+图片)列表显示+编辑功能
+3、修改 MediaManager，添加清空指定设备缓存接口：cleanOfDevice:deviceType:
+4、添加 TF 卡录制文件列表左滑删除功能
+
+
+【2019-01-02】：Modify by kuangweiqun
+1、适配了5s小屏手机
+2、完善了部分能力集显示问题
+
+
+【2019-01-02】：Modify by shenyuanluo
+1、修改推送消息列表，添加左滑删除功能
+2、修改 iOSConfigSDK，添加‘IOT-传感器’能力集 回调
+3、添加 SDK-Log 文件
+4、修改 MediaManager，添加 TF 卡录制视频、抓拍图片媒体文件类型支持
+
+
+【2018-12-29】：Modify by shenyuanluo
+1、添加’异线程‘上锁/解锁 互斥锁 类：GosLock
+2、添加’异线程‘上锁/解锁 读-写锁（‘写’操作互斥；‘读’操作支持并发）类：GosReadWriteLock
+3、优化设备列表、消息列表数据同步访问逻辑
+4、添加 Layer 动画子类：GosTransition
+5、将‘DeviceManager’类名修改为‘GosDevManager'，避免与系统’DeviceManager‘库文件冲突
+6、解决推送设置列表页面，左滑手势退出一半取消退出后，列表数据加倍了问题
+7、修改 iOSConfigSDK，添加’LBS‘ 轮询地址查询策略
+8、修改 iOSConfigSDK，禁止’长连接‘推送消息（消息已经走了 APNS 渠道）
+9、使用封面代替推送消息图片（当推送消息图片 URL 为空时）
+
+
+【2018-12-28】：Modify by kuangweiqun
+1、完善了支付宝和微信支付逻辑
+2、完善了情景任务的UI
+3、修复了其他界面的小问题(数据不够不滚动，UItableview下划线等调整)
+
+
+
+【2018-12-28】：Modify by shenyuanluo
+1、添加‘TF 卡录像播放’入口
+2、删除多余的资源文件
+3、优化 iOSDevSDK，解决还未初始化‘传输协议和服务器地址’就开始创建设备连接而导致底层 Crash 问题。
+4、添加全局队列管理器：QueueManager
+
+
+【2018-12-28】：Modify by husx
+1. 去除添加TFCard文件夹列表空页面、媒体列表空页面 
+
+
+【2018-12-28】：Modify by husx
+1. 添加TFCard文件夹列表空页面、媒体列表空页面 
+
+【2018-12-27】：Modify by shenyuanluo
+1、完善推送消息详情页翻页逻辑
+2、修改推送消息列表页，短暂高亮提示最新消息
+3、添加全局静态变量声明类：GlobalExport
+
+
+【2018-12-26】：Modify by shenyuanluo
+1、添加推送消息详情页翻页功能
+2、修改 iOSConfigSDK，优化队列管理池
+3、修改 iOSConfigSDK，添加’长连接‘推送消息接口
+
+
+【2018-12-24】：Modify by 罗乐
+1.网上商城页面上传。
+
+
+【2018-12-25】：Modify by kuangweiqun
+1、修复云套餐支付问题
+2、完善各界面UI问题
+
+
+【2018-12-25】：Modify by husx
+1. Info.plist添加第三方支付的白名单
+
+
+【2018-12-25】：Modify by husx
+1. 修复并添加云服务相关接口的问题
+2. 修复支付框架微信读取支付宝的scheme
+3. AppDelegate添加第三方支付回调
+
+
+【2018-12-25】：Modify by shenyuanluo
+1、修改 iOSDevSDK，优化单例接口：shareDevSDK
+2、修改 iOSSmartSDK，解决扫描控制器无法释放导致内存泄露问题
+3、优化‘管理器’类接口
+
+
+
+【2018-12-24】：Modify by 罗乐
+1.规范添加设备翻译文件。
+2.修改强制解绑接口。
+
+
+【2018-12-24】：Modify by husx
+1. 修复云服务请求付费套餐列表反馈没有权限的问题
+2. 调整免费套餐列表API相关内容
+3. 调整云服务API的status参数转换
+4. 添加网络请求的打印
+5. 修复修改密码的翻译未正常显示
+6. 完善云服务详情页跳转
+
+
+【2018-12-24】：Modify by shenyuanluo
+1、修改 iOSConfigSDK，添加强制解绑设备接口
+2、优化 DeviceManager 类接口
+3、添加推送消息详情页面，点击观看视频按钮处理
+4、解决点击推送消息启动 APP 进入预览界面时，设备状态不符问题
+5、修改 iOSDevSDK，添加断开所有设备连接接口
+
+
+【2018-12-24】：Modify by kuangweiqun
+1、完善了灯照时长功能
+2、接入了云套餐定制功能，待调试
+
+
+【2018-12-24】：Modify by husx
+1. 修复云服务API请求的问题
+2. 基本完成“我的”云服务功能
+3. 添加封装显示列表的弹框
+
+
+【2018-12-22】：Modify by shenyuanluo
+1、添加音效播放控制器类：GosSoundEffectPlayer
+2、添加处理缓存推送消息（编辑模式下接收）逻辑、音效+震动
+3、优化设备列表自动更新获取（解决：当打开 APP 快速切换设备列表页面时会出现获取无法设备列表问题）
+4、添加推送图片下载失败通知：PUSH_IMG_DOWNLOAD_RESULT_NOTIFY
+5、添加设备能力保存到数据库功能
+
+
+【2018-12-21】：Modify by husx
+1. 修复第三方支付库的Result缺少参数的问题
+2. 修复第三方支付库的引入头文件的问题
+3. 修复云服务的API相关问题
+4. 修复点击我的跳转异常的问题
+5. 暂时接入云服务API
+6. 添加自定义AlertView以完善点击我的里云服务的点击事件
+
+
+【2018-12-21】：Modify by shenyuanluo
+1、添加推送图片管理器类：PushImageManager
+2、完善推送消息详情页面展示、最新消息更新
+3、添加退出登录时，关闭设备推送功能
+4、修改：GosLoggedInUserInfo 添加保存、获取用户 token 接口。
+
+
+【2018-12-20】：Modify by shenyuanluo
+1、更新 iOSConfigSDK，修改灯照时长时间点模型：LampTime
+2、添加推送图片自动下载功能
+3、修改 MedianManager，添加推送图片类型支持
+4、添加 APP 后台保活处理
+
+
+【2018-12-20】：Modify by 罗乐
+1、完善设备添加功能。
+2、上传设备动态图。
+
+
+【2018-12-20】：Modify by kuangweiqun
+1、完善音乐播放功能
+
+
+【2018-12-19】：Modify by shenyuanluo
+1、添加推送状态管理类：PushStatusMananger
+2、更新设备列表默认封面图片资源
+
+
+【2018-12-19】：Modify by kuangweiqun
+1、完善了灯照时长功能（现有一点模型转化问题）
+
+
+【2018-12-19】：Modify by husx
+1. 修复iOSPaymentSDK框架引入问题
+2. 设置URL Types
+3. 更新获取URL Scheme算法
+
+
+【2018-12-19】：Modify by husx
+1. 添加第三方支付framework框架
+2. 添加云服务Api
+3. NOTE: 先放进项目，仍需测试后使用
+
+
+【2018-12-18】：Modify by shenyuanluo
+1、添加推送设置功能
+
+
+【2018-12-17】：Modify by shenyuanluo
+1、修改 iOSConfigSDK，优化单例获取接口
+2、更新 iOSConfigSDK，添加推送功能接口
+3、添加 APNS 管理单例
+4、添加消息列表
+
+
+【2018-12-12】：Modify by 罗乐
+1.添加设备页面上传。
+
+
+【2018-12-12】：Modify by kuangweiqun
+1、完善了相册功能
+
+
+
+【2018-12-12】：Modify by shenyuanluo
+1、优化拉流策略：当重拉流失败次数（5次）到达后，开启设备重连策略。
+2、解决从预览界面返回设备列表页面，出现封面更新异常问题
+3、解决设备列表同一设备获取能力集多次问题
+4、修改预览界面，添加 G711 音频播放功能
+5、初步添加推送消息管理功能单例
+
+
+【2018-12-11】：Modify by shenyuanluo
+1、修改预览界面，添加对讲功能（半双工）功能
+
+
+【2018-12-11】：Modify by kuangweiqun
+1、完善了设置界面，格式化SD卡，翻译，修改设备名
+2、完善了WiFi设置，添加不在线设备，翻译
+
+
+【2018-12-11】：Modify by shenyuanluo
+1、解决预览界面返回设备列表时，封面不及时更新问题
+2、修改 iOSConfigSDK 心跳发送为常驻线程
+3、修改预览界面，添加视频质量切换功能
+4、修改预览界面，添加录像、拍照功能
+5、修改预览界面，添加云台控制、捏合放大功能
+6、修改预览界面，添加温度检测功能
+7、修改预览界面，添加摇篮曲播放/暂停功能
+
+
+【2018-12-11】：Modify by husx
+1. 规范化Mine的多语言翻译
+2. 完善VRPlay控制面板的封装
+3. 修复VRPlay点击显示模式显示与设计不一致的问题
+
+
+【2018-12-10】：Modify by husx
+1. 修复进入消息中心后返回可能崩溃的问题
+2. 完成时间轴
+
+
+【2018-12-10】：Modify by shenyuanluo
+1、分离 IPC 播放控制器 View
+2、添加云台控制功能
+3、优化自动连接管理定时器
+
+
+【2018-12-07】：Modify by kuangweiqun
+1、完善了aleax界面及接口
+2、完善了WiFi设置（在线WiFi设置）
+3、接入了升级提醒功能（待完善）
+4、加入了部分多国语言(aleax界面、移动侦测、声音侦测、温度报警、夜视、好友分享、摄像头时间校验、WiFi设置部分)
+
+
+【2018-12-07】：Modify by husx
+1. 修复Mine侧滑回来，会有上移的动画的问题
+2. 修复Mine相关页面的渐变色按钮，横竖切换后绘制会超出控件的问题
+3. 完成云服务订阅的UI
+4. 完成体验中心UI
+5. 添加Mine的一些资源文件
+6. 添加Mine的一些翻译
+
+【2018-12-07】：Modify by shenyuanluo
+1、更新 iOSConfigSDK，修改请求设备 WiFi 列表超时时间为：12 秒
+2、添加 APP 启动页
+3、添加设备能力集管理类：DevAbilityManager，改成自动获取逻辑
+4、修改 IPC 播放页面视频数据检查定时器
+
+
+【2018-12-06】：Modify by husx
+1. 完成体验中心的UI搭建
+2. 修复消息中心删除功能
+3. 添加Mine的一些资源文件
+4. 添加Mine的一些翻译
+
+
+【2018-12-06】：Modify by kuangweiqun
+1、音乐播放界面接入接口，待测试
+2、设备信息完善设备名显示及设备名修改
+3、好友分享界面接入接口
+4、加入GIf动图和AAC音频文件
+
+
+【2018-12-06】：Modify by shenyuanluo
+1、更新 iOSConfigSDK，添加查询设备固件升版本信息、开始升级设备固件版本信息、取消升级设备固件版本信息接口
+
+
+【2018-12-06】：Modify by husx
+1. 修复因分类执行代理返回高度方法导致设备列表页显示不全的问题
+2. 更改云服务订阅文件名
+3. 添加VRPlayer的Controller以及Control封装文件
+4. 删除Mine资源图片冲突文件
+
+【2018-12-06】：Modify by shenyuanluo
+1、更新 iOSConfigSDK，添加查询设备分享列表接口
+2、更新 iOSConfigSDK，添加格式化设备 SD 卡接口
+
+
+【2018-12-05】：Modify by husx
+1. 更新HUD
+2. 添加Mine图片
+3. 完成消息中心部分页面
+4. 完成体验中心部分页面
+5. 优化Mine的部分页面
+6. 添加DZNEmptyDataSet第三方框架
+
+
+【2018-12-05】：Modify by shenyuanluo
+1、更新 iOSConfigSDK，添加修改设备昵称、取流账号、取流密码接口
+2、更新 iOSConfigSDK，添加开启摇篮曲播放、停止摇篮曲播放、获取摇篮曲播放序号-播放状态、设置摇篮曲播放序号接口
+3、更新 iOSSmartSDK，添加扫码控制器异步退出接口
+4、解决侧滑手势和导航栏返回按钮返回效果导致 TabBar 显示/隐藏异常问题
+
+
+【2018-12-05】：Modify by kuangweiqun
+1、给控制器加了注释，可以轻易根据中文找到控制器界面
+2、给webview加了一个加载gif图的分类
+
+
+【2018-12-05】：Modify by shenyuanluo
+1、修改设备列表封面高度不适配 bug
+2、解决侧滑返回手势导致 TabBar 显示/隐藏不正确问题
+3、添加提取设备 ID 平台域（前 8 个字符）信息类：ExtractDevIdInfo
+3、修改 iOSSmartSDK，添加扫描返回是否支持硬解绑标识
+4、修改 iOSSmartSDK 添加搜索并获取设备信息方法：extractInfoWithDevId:timeout:
+
+
+【2018-12-04】：Modify by shenyuanluo
+1、完善设备自动连接逻辑（离线-->在线，在线-->离线）
+
+
+【2018-12-04】：Modify by kuangweiqun
+1、修改了设置界面的布局
+2、完善了声音侦测界面接口
+3、新增了添加传感器界面UI
+4、修改了创建界面从by GOscam 到 by匡匡
+
+
+【2018-12-04】：Modify by shenyuanluo
+1、添加子线程定时器类：GosThreadTimer
+2、修改自动连接检查和视频数据检查定时器为子线程定时器
+3、修改：根据设备类型处理播放页面
+
+
+【2018-12-04】：Modify by husx
+1、调整Mine项目结构
+2、完成意见反馈
+3、添加Mine注释、代码注释
+
+【2018-12-03】：Modify by shenyuanluo
+1、修改 PlayerSDK，解决解码结束无法释放内存 bug
+
+
+【2018-12-03】：Modify by kuangweiqun
+1、增加了情景模式和添加传感器界面
+2、增加了一个右键点击的分类
+
+
+【2018-11-30】：Modify by shenyuanluo
+1、修改全局导航栏返回按钮，加大点击区域
+2、添加导航控制器右滑返回
+
+
+【2018-11-29】：Modify by kuangweiqun
+1、设置界面第一次提交代码
+2、完成音乐播放(babyMusic)UI
+3、完成云服务UI
+4、完成设备信息UI，设备名修改、设备升级未完善
+5、完成灯照时长UI
+6、完成夜视
+7、完成运动检测
+8、完成相册UI
+9、完成分享好友UI
+10、完成时间校验UI
+11、完成三方接入UI
+12、完成声音检测UI
+13、完成WiFi设置界面UI
+
+
+
+
+【2018-11-29】：Modify by shenyuanluo
+1、添加内存泄露监测库：MLeaksFinder
+2、初步添加视频预览页面
+
+
+【2018-11-29】：Modify by husx
+1. 添加“我的”页面相关内容
+2. 注销、关于、FAQ功能完善
+3. 我的设置、意见反馈界面搭建基本完善
+4. 添加“我的”相关翻译
+
+【2018-11-28】：Modify by husx
+1. 添加时间轴
+2. 添加HUD封装
+
+【2018-11-27】：Modify by shenyuanluo
+1、更新设备列表 Cell 高度（根据屏宽比例适配）
+2、添加设备自动连接池模块
+3、更新 APP-Icon
+
+
+【2018-11-27】：Modify by husx
+1、消除第三方库、iOSSDK部分警告
+
+
+【2018-11-26】：Modify by shenyuanluo
+1、添加 GosDB，设备管理类：DeviceManager
+2、添加网络监测库：RealReachability
+3、完善自动登录逻辑（网络变化监控）
+4、完善 iOSConfigSDK 错误码回调
+
+
+【2018-11-24】：Modify by shenyuanluo
+1、修改 libMediaManager.a 添加 armv7 支持
+2、优化自动登录逻辑
+
+
+【2018-11-23】：Modify by shenyuanluo
+1、iOSConfigSDK 相关模型类添加 NSCoding、NSCopying、NSMutableCopying 协议支持
+2、设备列表模块添加
+3、添加获取登录用户信息类：GosLoggedInUserInfo
+4、添加统一页面背景颜色宏定义：GOS_VC_BG_COLOR  （0xF7F7F7）
+5、添加沙盒媒体统一管理库：MediaManager
+
+
+【2018-11-22】：Modify by shenyuanluo
+1、找回密码模块添加
+
+
+【2018-11-22】：Modify by shenyuanluo
+1、更新登录界面 账户输入提示语根据选择的国家和地区动态提示
+2、快速注册模块添加
+3、底部提示 View 添加：GosBottomTipsView
+4、全屏提示 HUD View 添加：GosHUDView
+5、单一页面隐藏 NavigationBar 分类添加：UIViewController+GosHiddenNavBar
+
+
+【2018-11-21】：Modify by shenyuanluo
+1、统一导航栏样式
+2、解决二层导航控制器时，TabBar 无法灵活隐藏/显示 问题
+3、添加 UIView 颜色渐变分类：UIView+GosGradient（注意：layer是在最底层）
+
+
+【2018-11-21】：Modify by shenyuanluo
+1、添加国家地区切换登录
+
+
+【2018-11-20】：Modify by shenyuanluo
+1、更新 iOSConfigSDK.a 文件，解决 armv7 CPU 架构设备无法运行问题
+2、添加项目支持 armv7、armv7s 架构
+
+
+【2018-11-19】：Modify by shenyuanluo
+1、登录模块添加
+2、登录时隐藏键盘
+
+
+
+【2018-11-14】：Modify by shenyuanluo
+1、新版 UI 初始框架搭建

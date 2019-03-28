@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeCheckVC">
+            <connections>
+                <outlet property="confirmBtnBottonLength" destination="q35-QC-mu6" id="lzd-2N-kGG"/>
+                <outlet property="faceImg" destination="dzF-lg-pfV" id="LxC-7l-teI"/>
+                <outlet property="imgTopLength" destination="E2I-zF-kvv" id="Kln-pY-Hof"/>
+                <outlet property="promptLab" destination="mzg-8q-vGP" id="3gv-YA-2PJ"/>
+                <outlet property="showView" destination="9cI-SG-lCr" id="Gkj-Za-Gau"/>
+                <outlet property="timeCheckBtn" destination="gKQ-Px-8q3" id="tba-c8-hRN"/>
+                <outlet property="tipsLab" destination="lJf-hX-z3a" id="HzR-7w-AcL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="摄像头实时画面上的时间取自网络，如果发现摄像头上的时间和手机时间不一致，请校正摄像头时间" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJf-hX-z3a">
+                    <rect key="frame" x="25" y="317.5" width="325" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKQ-Px-8q3">
+                    <rect key="frame" x="70" y="527" width="235" height="40"/>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.68627450980392157" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wqH-AA-pjA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="摄像头时间校验"/>
+                    <connections>
+                        <action selector="timeCheckClick:" destination="-1" eventType="touchUpInside" id="rkF-Po-v1a"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_TimeCorrection_example" translatesAutoresizingMaskIntoConstraints="NO" id="241-8n-wpN">
+                    <rect key="frame" x="55" y="160" width="265" height="97.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="241-8n-wpN" secondAttribute="height" multiplier="269:99" id="Kts-Wo-1rE"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-SG-lCr">
+                    <rect key="frame" x="50" y="637" width="275" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间校验成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzg-8q-vGP">
+                            <rect key="frame" x="94.5" y="6.5" width="86" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.68627450980392157" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_SmileFace" translatesAutoresizingMaskIntoConstraints="NO" id="dzF-lg-pfV">
+                            <rect key="frame" x="69.5" y="5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="7Hj-At-yZd"/>
+                                <constraint firstAttribute="width" constant="20" id="o5i-Jj-h81"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9137254901960784" green="0.93725490196078431" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8yY-CD-XyF"/>
+                        <constraint firstItem="mzg-8q-vGP" firstAttribute="centerX" secondItem="9cI-SG-lCr" secondAttribute="centerX" id="LXY-1U-0A2"/>
+                        <constraint firstItem="mzg-8q-vGP" firstAttribute="centerY" secondItem="9cI-SG-lCr" secondAttribute="centerY" id="Wm5-4z-pRP"/>
+                        <constraint firstItem="mzg-8q-vGP" firstAttribute="leading" secondItem="dzF-lg-pfV" secondAttribute="trailing" constant="5" id="u7O-kk-5g7"/>
+                        <constraint firstItem="dzF-lg-pfV" firstAttribute="centerY" secondItem="9cI-SG-lCr" secondAttribute="centerY" id="xwQ-3H-hsi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9cI-SG-lCr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="05I-Dj-9BX"/>
+                <constraint firstItem="241-8n-wpN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="160" id="E2I-zF-kvv"/>
+                <constraint firstItem="gKQ-Px-8q3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="70" id="FFM-6r-m3b"/>
+                <constraint firstAttribute="trailing" secondItem="lJf-hX-z3a" secondAttribute="trailing" constant="25" id="Hwy-LN-maW"/>
+                <constraint firstItem="241-8n-wpN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IRY-aj-16c"/>
+                <constraint firstAttribute="trailing" secondItem="9cI-SG-lCr" secondAttribute="trailing" constant="50" id="WoD-zR-2ST"/>
+                <constraint firstAttribute="bottom" secondItem="9cI-SG-lCr" secondAttribute="bottom" id="nVf-KJ-x7e"/>
+                <constraint firstAttribute="bottom" secondItem="gKQ-Px-8q3" secondAttribute="bottom" constant="100" id="q35-QC-mu6"/>
+                <constraint firstAttribute="trailing" secondItem="241-8n-wpN" secondAttribute="trailing" constant="55" id="qCH-mB-yj4"/>
+                <constraint firstItem="lJf-hX-z3a" firstAttribute="top" secondItem="241-8n-wpN" secondAttribute="bottom" constant="60" id="sgr-s1-yNd"/>
+                <constraint firstAttribute="trailing" secondItem="gKQ-Px-8q3" secondAttribute="trailing" constant="70" id="tI5-1i-f7A"/>
+                <constraint firstItem="241-8n-wpN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="ull-tl-XeE"/>
+                <constraint firstItem="lJf-hX-z3a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="vns-V3-Lmd"/>
+            </constraints>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_SmileFace" width="20" height="20"/>
+        <image name="img_TimeCorrection_example" width="268.5" height="98.5"/>
+    </resources>
+</document>

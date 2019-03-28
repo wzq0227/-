@@ -1,0 +1,114 @@
+iOSConfigSDK 代码修改 log
+
+
+【2019-03-07】：Modify by shenyuanluo
+1、将获取 CBS 地址接口改为“不加密”
+
+
+【2019-02-19】：Modify by shenyuanluo
+1、添加获取 SD 卡告警录像列表接口
+
+
+【2019-01-27】：Modify by shenyuanluo
+1、简化绑定接口【bindDeviceId:deviceName:deviceType:ownType:account】为【bindDevice:toAccount:】
+2、简化解绑接口【unBindDeviceId:account:】为【unBindDevice:fromAccount:】
+3、解决获取 CBS 地址失败后，无法再次轮询查询 CBS 地址问题
+
+
+【2019-01-18】：Modify by shenyuanluo
+1、添加网络检测-查询 CBS 地址接口
+2、添加检测服务器地址是否可达接口
+
+
+【2019-01-15】：Modify by shenyuanluo
+1、添加查询 IOT-声光报警器-开关状态接口
+
+
+【2019-01-11】：Modify by shenyuanluo
+1、添加‘定制-APP’类型枚举，默认：App_GOSCAM
+
+
+【2019-01-09】：Modify by shenyuanluo
+1、修改 TF 卡录制媒体文件信息模型类，添加文件列表解析
+2、添加 TF 卡录制媒体文件触发事件类型+告警类型
+3、添加 IOT-情景任务相关接口：添加、删除、修改、查询
+
+
+【2019-01-08】：Modify by shenyuanluo
+1、添加 ’声光报警器‘相关接口：配对、设置开关、停止报警
+2、修改 ’支持 IOT‘ 能力集为按位取：SupportIotSensorType
+3、添加 ’服务器 IOT-传感器‘相关接口：添加、删除、修改、查询
+
+
+【2019-01-07】：Modify by shenyuanluo
+1、添加准 IOT-传感器相关接口：准备添加、查询、开始添加、删除、修改
+
+
+【2019-01-03】：Modify by shenyuanluo
+1、添加删除 TF 卡录制文件接口
+
+
+【2019-01-02】：Modify by shenyuanluo
+1、添加‘IOT-传感器’能力集 回调
+
+
+【2018-12-29】：Modify by shenyuanluo
+1、添加’LBS‘ 轮询地址查询策略
+2、禁止’长连接‘推送消息（消息已经走了 APNS 渠道）
+
+
+【2018-11-26】：Modify by shenyuanluo
+1、添加全局队列控制类：SYDispatchQueuePool
+2、优化队列管理池
+3、添加’长连接‘推送消息接口
+
+
+【2018-11-24】：Modify by shenyuanluo
+1、添加强制解绑设备接口
+
+
+【2018-12-20】：Modify by shenyuanluo
+1、修改灯照时长时间点模型：LampTime
+
+
+【2018-12-17】：Modify by shenyuanluo
+1、优化单例获取接口
+2、添加推送功能接口
+
+
+【2018-12-11】：Modify by shenyuanluo
+1、修改心跳发送为常驻线程
+
+
+【2018-12-07】：Modify by shenyuanluo
+1、修改请求设备 WiFi 列表超时时间为：12 秒
+
+
+【2018-12-06】：Modify by shenyuanluo
+1、添加查询设备固件升版本信息接口
+2、添加开始升级设备固件版本信息接口
+3、添加取消升级设备固件版本信息接口
+
+
+【2018-12-06】：Modify by shenyuanluo
+1、添加查询设备分享列表接口
+2、添加格式化设备 SD 卡接口
+
+
+【2018-12-05】：Modify by shenyuanluo
+1、添加修改设备昵称、取流账号、取流密码接口
+2、添加开启摇篮曲播放、停止摇篮曲播放、获取摇篮曲播放序号-播放状态、设置摇篮曲播放序号接口
+
+
+【2018-11-26】：Modify by shenyuanluo
+1、完善错误码回调
+
+
+【2018-11-23】：Modify by shenyuanluo
+1、相关模型类添加 NSCoding、NSCopying、NSMutableCopying 协议支持
+
+
+【2018-11-20】：Modify by shenyuanluo
+1、 添加 armv7 支持
+
+

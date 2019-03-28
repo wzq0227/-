@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateQRCodeViewController">
+            <connections>
+                <outlet property="QRCodeImageView" destination="Wfa-0I-kG2" id="jee-JP-R4y"/>
+                <outlet property="nextSetpBtn" destination="1yv-VO-cNy" id="is9-F4-MBS"/>
+                <outlet property="noSoundBtn" destination="LY8-AT-W8R" id="tQM-WO-33Q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY8-AT-W8R">
+                    <rect key="frame" x="30" y="561" width="354" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="JId-SF-CZx"/>
+                    </constraints>
+                    <state key="normal" title="没有听到任何声音？"/>
+                    <connections>
+                        <action selector="noSoundBtnAction:" destination="-1" eventType="touchUpInside" id="DjV-I2-Uzd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yv-VO-cNy">
+                    <rect key="frame" x="30" y="626" width="354" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.61675347222222221" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="OrI-NI-qJ8"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextStepBtnAction:" destination="-1" eventType="touchUpInside" id="DfR-Cc-gXe"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wfa-0I-kG2">
+                    <rect key="frame" x="41.333333333333343" y="120" width="331.33333333333326" height="331"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Wfa-0I-kG2" secondAttribute="height" id="eur-Vv-OTy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wfa-0I-kG2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7oB-5K-pyS"/>
+                <constraint firstItem="1yv-VO-cNy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Dt7-IU-7qp"/>
+                <constraint firstAttribute="trailing" secondItem="1yv-VO-cNy" secondAttribute="trailing" constant="30" id="Fx2-kU-fCQ"/>
+                <constraint firstItem="1yv-VO-cNy" firstAttribute="top" secondItem="LY8-AT-W8R" secondAttribute="bottom" constant="25" id="ITN-FT-IIX"/>
+                <constraint firstItem="LY8-AT-W8R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Nb8-Sf-uXB"/>
+                <constraint firstItem="1yv-VO-cNy" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-70" id="iSV-cZ-S6e"/>
+                <constraint firstItem="Wfa-0I-kG2" firstAttribute="centerY" secondItem="LY8-AT-W8R" secondAttribute="top" multiplier="0.5" constant="5" id="jAm-44-iM8"/>
+                <constraint firstItem="Wfa-0I-kG2" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" priority="999" id="kHw-xi-vyR"/>
+                <constraint firstAttribute="trailing" secondItem="LY8-AT-W8R" secondAttribute="trailing" constant="30" id="opY-dm-1Q4"/>
+                <constraint firstItem="Wfa-0I-kG2" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="LY8-AT-W8R" secondAttribute="top" constant="40" id="sTr-JK-2Xs"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

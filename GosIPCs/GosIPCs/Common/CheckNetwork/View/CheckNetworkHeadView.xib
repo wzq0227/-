@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CheckNetworkHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="443"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前测试网络状况：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmS-vC-9aV">
+                    <rect key="frame" x="98" y="10" width="147" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="要检测摄像机的网络状况，请将手机与摄像机连接在同一个网络" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3K-8k-Wd1">
+                    <rect key="frame" x="20" y="294.5" width="303" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E07-SX-3xM">
+                    <rect key="frame" x="56.5" y="44.5" width="230" height="230"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="E07-SX-3xM" secondAttribute="height" multiplier="1:1" id="Nqb-w3-eqd"/>
+                        <constraint firstAttribute="width" constant="230" id="tqq-0i-g1M"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5o-dh-97b">
+                    <rect key="frame" x="145.5" y="149" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="N5o-dh-97b" firstAttribute="centerX" secondItem="E07-SX-3xM" secondAttribute="centerX" id="BNv-JR-A3E"/>
+                <constraint firstItem="NmS-vC-9aV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="D3e-xj-YHe"/>
+                <constraint firstAttribute="trailing" secondItem="X3K-8k-Wd1" secondAttribute="trailing" constant="20" id="Lj3-1m-Hz3"/>
+                <constraint firstItem="X3K-8k-Wd1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="R6l-Yj-Z5F"/>
+                <constraint firstItem="E07-SX-3xM" firstAttribute="top" secondItem="NmS-vC-9aV" secondAttribute="bottom" constant="15" id="aQe-zI-ARu"/>
+                <constraint firstItem="X3K-8k-Wd1" firstAttribute="top" secondItem="E07-SX-3xM" secondAttribute="bottom" constant="20" id="klj-Bp-mYU"/>
+                <constraint firstItem="N5o-dh-97b" firstAttribute="centerY" secondItem="E07-SX-3xM" secondAttribute="centerY" id="mNm-vn-LoJ"/>
+                <constraint firstItem="NmS-vC-9aV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xdO-c4-NhA"/>
+                <constraint firstItem="E07-SX-3xM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yVR-QC-QSE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonTipsLab" destination="X3K-8k-Wd1" id="hAL-v0-GDk"/>
+                <outlet property="checkNetImg" destination="E07-SX-3xM" id="NXb-Hn-MCk"/>
+                <outlet property="checkNetImgWidth" destination="tqq-0i-g1M" id="PcD-7p-LIC"/>
+                <outlet property="checkNetIngLab" destination="N5o-dh-97b" id="36Y-jC-0ik"/>
+                <outlet property="titleTipLab" destination="NmS-vC-9aV" id="an3-Nu-fHa"/>
+            </connections>
+            <point key="canvasLocation" x="112.8" y="360.2698650674663"/>
+        </view>
+    </objects>
+</document>

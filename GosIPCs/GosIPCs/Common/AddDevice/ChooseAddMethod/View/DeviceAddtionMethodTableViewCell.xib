@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="KGk-i7-Jjw" customClass="DeviceAddtionMethodTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="150.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ab-Mx-VUZ">
+                        <rect key="frame" x="31.5" y="50" width="50" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3Ab-Mx-VUZ" secondAttribute="height" id="HII-gk-knX"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addDev_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="yvZ-Mm-v7O">
+                        <rect key="frame" x="391.5" y="62.5" width="25" height="25.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="JJB-yn-Tn9"/>
+                            <constraint firstAttribute="width" secondItem="yvZ-Mm-v7O" secondAttribute="height" id="PcR-dN-phA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="摄像机通过广播方式接收到WiFi配网信息进行联网。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="XbU-RJ-jpM">
+                        <rect key="frame" x="91.5" y="75.5" width="290" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WI-FI快连" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="eRx-s7-yiI">
+                        <rect key="frame" x="91.5" y="40.5" width="290" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="XbU-RJ-jpM" firstAttribute="trailing" secondItem="eRx-s7-yiI" secondAttribute="trailing" id="4th-uA-nqD"/>
+                    <constraint firstItem="yvZ-Mm-v7O" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AqR-jk-XjO"/>
+                    <constraint firstItem="XbU-RJ-jpM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="bottom" multiplier="1/2" id="HXt-Gc-PN3"/>
+                    <constraint firstItem="3Ab-Mx-VUZ" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="1/3" id="Jxn-Qg-BC1"/>
+                    <constraint firstItem="XbU-RJ-jpM" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="bottom" multiplier="0.9" id="LPI-ky-XgL"/>
+                    <constraint firstItem="XbU-RJ-jpM" firstAttribute="leading" secondItem="eRx-s7-yiI" secondAttribute="leading" id="QgC-C1-RVt"/>
+                    <constraint firstItem="eRx-s7-yiI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="bottom" multiplier="0.27" id="VOd-3T-i3G"/>
+                    <constraint firstItem="yvZ-Mm-v7O" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" multiplier="0.93" id="aGY-q0-WAO"/>
+                    <constraint firstItem="XbU-RJ-jpM" firstAttribute="top" secondItem="eRx-s7-yiI" secondAttribute="bottom" constant="5" id="bFa-Zv-kay"/>
+                    <constraint firstItem="yvZ-Mm-v7O" firstAttribute="leading" secondItem="eRx-s7-yiI" secondAttribute="trailing" constant="10" id="cPg-xK-Tij"/>
+                    <constraint firstItem="3Ab-Mx-VUZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sF9-aJ-hRG"/>
+                    <constraint firstItem="yvZ-Mm-v7O" firstAttribute="height" secondItem="3Ab-Mx-VUZ" secondAttribute="height" multiplier="1/2" priority="999" id="uUw-yg-KK4"/>
+                    <constraint firstItem="3Ab-Mx-VUZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="trailing" multiplier="0.07" id="vkc-Oa-jf1"/>
+                    <constraint firstItem="eRx-s7-yiI" firstAttribute="leading" secondItem="3Ab-Mx-VUZ" secondAttribute="trailing" constant="10" id="x0i-Hi-g9Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImgView" destination="yvZ-Mm-v7O" id="I1v-4l-nU4"/>
+                <outlet property="methodDetialLabel" destination="XbU-RJ-jpM" id="1yB-O4-zj6"/>
+                <outlet property="methodImageView" destination="3Ab-Mx-VUZ" id="8oA-ya-xve"/>
+                <outlet property="methodNameLabel" destination="eRx-s7-yiI" id="Iwd-RQ-Qbh"/>
+            </connections>
+            <point key="canvasLocation" x="-41" y="105.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addDev_arrow" width="16" height="16"/>
+    </resources>
+</document>

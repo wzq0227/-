@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="AddSensorCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="防区1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTR-8v-jWI">
+                        <rect key="frame" x="15" y="21.5" width="35" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.68627450980392157" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-Jd-9H8">
+                        <rect key="frame" x="60" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ETx-Zk-SL1"/>
+                            <constraint firstAttribute="width" constant="40" id="m7V-sY-kev"/>
+                        </constraints>
+                        <state key="normal" image="icon_edit "/>
+                        <connections>
+                            <action selector="actionModifyNameClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Cgr-Yf-KWr"/>
+                        </connections>
+                    </button>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjh-9h-rqr">
+                        <rect key="frame" x="259" y="14.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="actionSwitchClick:" destination="KGk-i7-Jjw" eventType="valueChanged" id="F9y-6z-Il4"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HTR-8v-jWI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8IQ-kQ-4fD"/>
+                    <constraint firstItem="HTR-8v-jWI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8Kv-dr-TYR"/>
+                    <constraint firstItem="4Hz-Jd-9H8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IJc-Qs-Wb9"/>
+                    <constraint firstAttribute="trailing" secondItem="Sjh-9h-rqr" secondAttribute="trailing" constant="12" id="ImK-5O-7hW"/>
+                    <constraint firstItem="Sjh-9h-rqr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Hz-Jd-9H8" secondAttribute="trailing" constant="5" id="TA5-xq-TbA"/>
+                    <constraint firstItem="Sjh-9h-rqr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pK8-ht-E01"/>
+                    <constraint firstItem="HTR-8v-jWI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sdJ-K0-cQz"/>
+                    <constraint firstItem="4Hz-Jd-9H8" firstAttribute="leading" secondItem="HTR-8v-jWI" secondAttribute="trailing" constant="10" id="uOx-CT-hZa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="sensorModifyBtn" destination="4Hz-Jd-9H8" id="KT9-Z9-WHI"/>
+                <outlet property="sensorSwitch" destination="Sjh-9h-rqr" id="ocR-i5-dco"/>
+                <outlet property="sensorTitleLab" destination="HTR-8v-jWI" id="cda-AM-35b"/>
+            </connections>
+            <point key="canvasLocation" x="-70.400000000000006" y="9.8950524737631191"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_edit " width="14" height="14"/>
+    </resources>
+</document>

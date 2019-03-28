@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_code_list" translatable="false">
+        <country>Angola</country>    <num>+244</num>
+        <country>Afghanistan</country>    <num>+93</num>
+        <country>Albania</country>    <num>+355</num>
+        <country>Algeria</country>    <num>+213</num>
+        <country>Andorra</country>    <num>+376</num>
+        <country>Anguilla</country>    <num>+1264</num>
+        <country>Antigua and Barbuda</country>    <num>+1268</num>
+        <country>Argentina</country>    <num>+54</num>
+        <country>Armenia</country>    <num>+374</num>
+        <country>Ascension</country>    <num>+247</num>
+        <country>Australia</country>    <num>+61</num>
+        <country>Austria</country>    <num>+43</num>
+        <country>Azerbaijan</country>    <num>+994</num>
+        <country>Bahamas</country>    <num>+1242</num>
+        <country>Bahrain</country>    <num>+973</num>
+        <country>Bangladesh</country>    <num>+880</num>
+        <country>Barbados</country>    <num>+1246</num>
+        <country>Belarus</country>    <num>+375</num>
+        <country>Belgium</country>    <num>+32</num>
+        <country>Belize</country>    <num>+501</num>
+        <country>Benin</country>    <num>+229</num>
+        <country>BermudaIs.</country>    <num>+1441</num>
+        <country>Bolivia</country>    <num>+591</num>
+        <country>Botswana</country>    <num>+267</num>
+        <country>Brazil</country>    <num>+55</num>
+        <country>Brunei</country>    <num>+673</num>
+        <country>Bulgaria</country>    <num>+359</num>
+        <country>Burkina-faso</country>    <num>+226</num>
+        <country>Burma</country>    <num>+95</num>
+        <country>Burundi</country>    <num>+257</num>
+        <country>Cameroon</country>    <num>+237</num>
+        <country>Canada</country>    <num>+1</num>
+        <country>CaymanIs.</country>    <num>+1345</num>
+        <country>Central African Republic</country>    <num>+236</num>
+        <country>Chad</country>    <num>+235</num>
+        <country>Chile</country>    <num>+56</num>
+        <country>China</country>    <num>+86</num>
+        <country>Colombia</country>    <num>+57</num>
+        <country>Congo</country>    <num>+242</num>
+        <country>Cook Is.</country>    <num>+682</num>
+        <country>Costa Rica</country>    <num>+506</num>
+        <country>Cuba</country>    <num>+53</num>
+        <country>Cyprus</country>    <num>+357</num>
+        <country>Czech Republic</country>    <num>+420</num>
+        <country>Denmark</country>    <num>+45</num>
+        <country>Djibouti</country>    <num>+253</num>
+        <country>Dominica Rep.</country>    <num>+1890</num>
+        <country>Ecuador</country>    <num>+593</num>
+        <country>Egypt</country>    <num>+20</num>
+        <country>EISalvador</country>    <num>+503</num>
+        <country>Estonia</country>    <num>+372</num>
+        <country>Ethiopia</country>    <num>+251</num>
+        <country>Fiji</country>    <num>+679</num>
+        <country>Finland</country>    <num>+358</num>
+        <country>France</country>    <num>+33</num>
+        <country>French Guiana</country>    <num>+594</num>
+        <country>Gabon</country>    <num>+241</num>
+        <country>Gambia</country>    <num>+220</num>
+        <country>Georgia</country>    <num>+995</num>
+        <country>Germany</country>    <num>+49</num>
+        <country>Ghana</country>    <num>+233</num>
+        <country>Gibraltar</country>    <num>+350</num>
+        <country>Greece</country>    <num>+30</num>
+        <country>Grenada</country>    <num>+1809</num>
+        <country>Guam</country>    <num>+1671</num>
+        <country>Guatemala</country>    <num>+502</num>
+        <country>Guinea</country>    <num>+224</num>
+        <country>Guyana</country>    <num>+592</num>
+        <country>Haiti</country>    <num>+509</num>
+        <country>Honduras</country>    <num>+504</num>
+        <country>Hongkong(China)</country>    <num>+852</num>
+        <country>Hungary</country>    <num>+36</num>
+        <country>Iceland</country>    <num>+354</num>
+        <country>India</country>    <num>+91</num>
+        <country>Indonesia</country>    <num>+62</num>
+        <country>Iran</country>    <num>+98</num>
+        <country>Iraq</country>    <num>+964</num>
+        <country>Ireland</country>    <num>+353</num>
+        <country>Israel</country>    <num>+972</num>
+        <country>Italy</country>    <num>+39</num>
+        <country>IvoryCoast</country>    <num>+225</num>
+        <country>Jamaica</country>    <num>+1876</num>
+        <country>Japan</country>    <num>+81</num>
+        <country>Jordan</country>    <num>+962</num>
+        <country>Kampuchea(Cambodia)</country>    <num>+855</num>
+        <country>Kazakstan</country>    <num>+327</num>
+        <country>Kenya</country>    <num>+254</num>
+        <country>Korea</country>    <num>+82</num>
+        <country>Kuwait</country>    <num>+965</num>
+        <country>Kyrgyzstan</country>    <num>+331</num>
+        <country>Laos</country>    <num>+856</num>
+        <country>Latvia</country>    <num>+371</num>
+        <country>Lebanon</country>    <num>+961</num>
+        <country>Lesotho</country>    <num>+266</num>
+        <country>Liberia</country>    <num>+231</num>
+        <country>Libya</country>    <num>+218</num>
+        <country>Liechtenstein</country>    <num>+423</num>
+        <country>Lithuania</country>    <num>+370</num>
+        <country>Luxembourg</country>    <num>+352</num>
+        <country>Macao(China)</country>    <num>+853</num>
+        <country>Madagascar</country>    <num>+261</num>
+        <country>Malawi</country>    <num>+265</num>
+        <country>Malaysia</country>    <num>+60</num>
+        <country>Maldives</country>    <num>+960</num>
+        <country>Mali</country>    <num>+223</num>
+        <country>Malta</country>    <num>+356</num>
+        <country>MarianaIs</country>    <num>+1670</num>
+        <country>Martinique</country>    <num>+596</num>
+        <country>Mauritius</country>    <num>+230</num>
+        <country>Mexico</country>    <num>+52</num>
+        <country>Moldova, Republic of</country>    <num>+373</num>
+        <country>Monaco</country>    <num>+377</num>
+        <country>Mongolia</country>    <num>+976</num>
+        <country>Montserrat Is</country>    <num>+1664</num>
+        <country>Morocco</country>    <num>+212</num>
+        <country>Mozambique</country>    <num>+258</num>
+        <country>Namibia</country>    <num>+264</num>
+        <country>Nauru</country>    <num>+674</num>
+        <country>Nepal</country>    <num>+977</num>
+        <country>Netheriands Antilles</country>    <num>+599</num>
+        <country>Netherlands</country>    <num>+31</num>
+        <country>NewZealand</country>    <num>+64</num>
+        <country>Nicaragua</country>    <num>+505</num>
+        <country>Niger</country>    <num>+227</num>
+        <country>Nigeria</country>    <num>+234</num>
+        <country>North Korea</country>    <num>+850</num>
+        <country>Norway</country>    <num>+47</num>
+        <country>Oman</country>    <num>+968</num>
+        <country>Pakistan</country>    <num>+92</num>
+        <country>Panama</country>    <num>+507</num>
+        <country>PapuaNewCuinea</country>    <num>+675</num>
+        <country>Paraguay</country>    <num>+595</num>
+        <country>Peru</country>    <num>+51</num>
+        <country>Philippines</country>    <num>+63</num>
+        <country>Poland</country>    <num>+48</num>
+        <country>French Polynesia</country>    <num>+689</num>
+        <country>Portugal</country>    <num>+351</num>
+        <country>PuertoRico</country>    <num>+1787</num>
+        <country>Qatar</country>    <num>+974</num>
+        <country>Reunion</country>    <num>+262</num>
+        <country>Romania</country>    <num>+40</num>
+        <country>Russia</country>    <num>+7</num>
+        <country>Saint Lueia</country>    <num>+1758</num>
+        <country>Saint Vincent</country>    <num>+1784</num>
+        <country>Samoa Eastern</country>    <num>+684</num>
+        <country>Samoa Western</country>    <num>+685</num>
+        <country>San Marino</country>    <num>+378</num>
+        <country>Sao TomeandPrincipe</country>    <num>+239</num>
+        <country>Saudi Arabia</country>    <num>+966</num>
+        <country>Senegal</country>    <num>+221</num>
+        <country>Seychelles</country>    <num>+248</num>
+        <country>Sierra Leone</country>    <num>+232</num>
+        <country>Singapore</country>    <num>+65</num>
+        <country>Slovakia</country>    <num>+421</num>
+        <country>Slovenia</country>    <num>+386</num>
+        <country>Solomon Is</country>    <num>+677</num>
+        <country>Somali</country>    <num>+252</num>
+        <country>South Africa</country>    <num>+27</num>
+        <country>Spain</country>    <num>+34</num>
+        <country>Sri Lanka</country>    <num>+94</num>
+        <country>St.Vincent</country>    <num>+1784</num>
+        <country>Sudan</country>    <num>+249</num>
+        <country>Suriname</country>    <num>+597</num>
+        <country>Swaziland</country>    <num>+268</num>
+        <country>Sweden</country>    <num>+46</num>
+        <country>Switzerland</country>    <num>+41</num>
+        <country>Syriaw</country>    <num>+963</num>
+        <country>Taiwan(China)</country>    <num>+886</num>
+        <country>Tajikstan</country>    <num>+992</num>
+        <country>Tanzania</country>    <num>+255</num>
+        <country>Thailand</country>    <num>+66</num>
+        <country>Togo</country>    <num>+228</num>
+        <country>Tonga</country>    <num>+676</num>
+        <country>Trinidad and Tobago</country>    <num>+1809</num>
+        <country>Tunisia</country>    <num>+216</num>
+        <country>Turkey</country>    <num>+90</num>
+        <country>Turkmenistan</country>    <num>+993</num>
+        <country>Uganda</country>    <num>+256</num>
+        <country>Ukraine</country>    <num>+380</num>
+        <country>United Arab Emirates</country>    <num>+971</num>
+        <country>United Kiongdom</country>    <num>+44</num>
+        <country>United States of America</country>    <num>+1</num>
+        <country>Uruguay</country>    <num>+598</num>
+        <country>Uzbekistan</country>    <num>+233</num>
+        <country>Venezuela</country>    <num>+58</num>
+        <country>Vietnam</country>    <num>+84</num>
+        <country>Yemen</country>    <num>+967</num>
+        <country>Yugoslavia</country>    <num>+381</num>
+        <country>Zimbabwe</country>    <num>+263</num>
+        <country>Zaire</country>    <num>+243</num>
+        <country>Zambia</country>    <num>+260</num>
+</string-array>
+</resources>

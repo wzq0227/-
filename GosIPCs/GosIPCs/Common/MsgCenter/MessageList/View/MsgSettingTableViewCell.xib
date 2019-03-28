@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MsgSettingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_message_mine" translatesAutoresizingMaskIntoConstraints="NO" id="Kss-LE-sKZ">
+                        <rect key="frame" x="15" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Kss-LE-sKZ" secondAttribute="height" multiplier="1:1" id="DiG-1W-Je4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息推送设置" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-c4-uqK">
+                        <rect key="frame" x="54" y="13.5" width="222" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="J60-f5-Q7B">
+                        <rect key="frame" x="291" y="15" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="J60-f5-Q7B" secondAttribute="height" multiplier="1:1" id="KRZ-ZA-GIv"/>
+                            <constraint firstAttribute="width" constant="14" id="gc3-Ml-rkA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J60-f5-Q7B" firstAttribute="centerY" secondItem="Kss-LE-sKZ" secondAttribute="centerY" id="5qP-pq-2FP"/>
+                    <constraint firstItem="J60-f5-Q7B" firstAttribute="leading" secondItem="c6a-c4-uqK" secondAttribute="trailing" constant="15" id="RaW-rP-kGC"/>
+                    <constraint firstItem="c6a-c4-uqK" firstAttribute="centerY" secondItem="Kss-LE-sKZ" secondAttribute="centerY" id="iC9-dY-qQw"/>
+                    <constraint firstItem="c6a-c4-uqK" firstAttribute="leading" secondItem="Kss-LE-sKZ" secondAttribute="trailing" constant="15" id="uq8-vk-yqN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Kss-LE-sKZ" secondAttribute="bottom" constant="10" id="5JO-87-igH"/>
+                <constraint firstAttribute="trailing" secondItem="J60-f5-Q7B" secondAttribute="trailing" constant="15" id="7oI-eg-nCW"/>
+                <constraint firstItem="Kss-LE-sKZ" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="MxO-eX-Iom"/>
+                <constraint firstItem="Kss-LE-sKZ" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="10" id="mkK-Sv-g4l"/>
+            </constraints>
+            <connections>
+                <outlet property="msgSettingTitleLabel" destination="c6a-c4-uqK" id="zcO-hR-C28"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_message_mine" width="26" height="26"/>
+        <image name="icon_more" width="14" height="14"/>
+    </resources>
+</document>

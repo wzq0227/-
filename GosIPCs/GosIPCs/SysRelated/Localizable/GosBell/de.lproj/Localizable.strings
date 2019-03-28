@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  GosIPCs
+
+  Created by shenyuanluo on 2018/11/12.
+  Copyright © 2018 shenyuanluo. All rights reserved.
+*/
+
+
+
+/*
+ 英语
+ */
+
+
+"ImmediateExperience"           = "ImmediateExperience";
+"DeviceList"                    = "Device";
+"GosMall"                       = "GosMall";
+"Mine"                          = "Mine";

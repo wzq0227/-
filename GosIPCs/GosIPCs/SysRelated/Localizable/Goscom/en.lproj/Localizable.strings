@@ -1,0 +1,584 @@
+/* 
+  Localizable.strings
+  GosIPCs
+
+  Created by shenyuanluo on 2018/11/12.
+  Copyright © 2018 shenyuanluo. All rights reserved.
+*/
+
+
+
+/*
+ 英语
+ */
+/*-----------------------<通用分割线>------------------------------*/
+"GosComm_Confirm"                 = "Confirm";
+"GosComm_Save"                    = "Save";
+"GosComm_SelectAll"               = "Select all";
+"GosComm_CancelCheckAll"          = "取消全选";
+"GosComm_Done"                    = "Done";
+"GosComm_Edit"                    = "Edit";
+"GosComm_Save_title"              = "Whether to save the changes?";
+"GosComm_getData_fail"            = "请求数据失败";
+"GosComm_Set_Succeeded"           = "Set succeeded";
+"GosComm_Set_Failed"              = "Set failed";
+"GosComm_Cancel"                  = "Cancel";
+"GosComm_Delete"                  = "Delete";
+
+/*-----------------------<通用分割线>------------------------------*/
+
+// 注册登录
+"RealTimeView"                  = "实时查看";
+"MultiMonitor"                  = "多路监控";
+"QuickInstall"                  = "快捷安装";
+"ImmediateExperience"           = "Immediate Experience";
+"Device"                        = "Device";
+"GosMall"                       = "GosMall";
+"Mine"                          = "Mine";
+"AccountTFPlaceholder"          = "请输入手机号/邮箱";
+"AccountTFPlaceholder2"         = "请输入邮箱";
+"PasswordTFPlaceholder"         = "Enter password";
+"FastRegister"                  = "Quick register";
+"RememberPassword"              = "Remember password";
+"Login"                         = "Login";
+"ChnageCountry"                 = "切换国家和地区";
+"ForgetPassword"                = "Forget password";
+"NorthAmerica"                  = "北美";
+"European"                      = "欧洲";
+"China"                         = "中国";
+"AsiaPacific"                   = "亚太";
+"MiddleEast"                    = "中东";
+"AccountOrPwdFmtError"          = "User account or password format incorrect";
+"PasswordLenLimit"              = "Password shall be 8-16 characters in length";
+"AccountNotExist"               = "Account does not exist";
+"UserNameError"                 = "用户名错误";
+"PasswordError"                 = "密码错误";
+"ParamIllegal"                  = "参数不合法";
+"NetworkReqTimeOUt"             = "网络请求超时";
+"CheckNetwork"                  = "网络诊断";
+"SVPLoading"                    = "Loading";
+"Register"                      = "Register";
+"ReqAuthCode"                   = "Get code";
+"AuthCodeTFPlaceholder"         = "请输入手机/邮箱验证码";
+"AuthCodeTFPlaceholder2"        = "请输入邮箱验证码";
+"ConfirmPasswordTFPlaceholder"  = "Enter password again";
+"PasswordInconformity"          = "密码不一致";
+"AccountHasExist"               = "Account already exists";
+"SendDataFailure"               = "Send failed, please check network connection";
+"AuthCodeSendPhone"             = "验证码已以短信形式发送到您的手机，请注意查收";
+"AhtuCodeSendEmail"             = "验证码已发送到您的邮箱，请注意查收";
+"RegisterSuccess"               = "Register succeeded";
+"EmailAddrError"                = "邮箱地址错误";
+"SendAuthCodeToEmailFailure"    = "发送验证码到邮箱失败";
+"AuthCodeError"                 = "Verification code incorrect";
+"AuthCodeExpired"               = "验证码过期";
+"HaveNotReqAuthCode"            = "没有获取验证码";
+"Commit"                        = "Commit";
+"ResetSuccess"                  = "Set succeeded";
+"RetrievePassword"              = "Forget password";
+"AccountNotExist"               = "用户不存在";
+"Register_include_two_Format"   = "Password format: 8-16 characters in length; contain at least two kinds among numbers, capital letters and lowercase letters";
+"Register_include_two"          = "Password must contain at least two kinds among numbers, capital letters and lowercase letters";
+"Register_AgreeUserAgreement"   = "I agree User agreement";
+"Register_UserAgreement"        = "User agreement";
+"Country_TitleDefault"          = "United States of America +1";
+
+// 设备列表
+"DeviceList"                    = "设备列表";
+"Share"                         = "share";
+"Connecting"                    = "Connecting";
+"NotConnected"                  = "Disconnected";
+"HasNoNetwork"                  = "当前手机无网络连接";
+
+// 推送消息
+"Deleting"                      = "正在删除...";
+"PushMsg_ImageDownloadFailure"  = "图片下载失败";
+"PushMsgFrom"                   = "From";
+"PushMsg_IsLastMsg"             = "已经是最后一条消息了！";
+"PushMsg_IsLatestMsg"           = "已经是最新一条消息了！";
+"PushMsgMoveEvent"              = "Object movement sensing event";
+"PushMsgPirEvent"               = "Object movement sensing event";
+"PushMsgTemUpLimitEvent"        = "Temperature(Upper Limit) alarm event";
+"PushMsgTemLowLimitEvent"       = "Temperature(Lower Limit) alarm event";
+"PushMsgVoiceEvent"             = "Sound alarm event";
+"PushMsgBellRingEvent"          = "Bell ring alarm event";
+"PushMsgLowBatteryEvent"        = "Low battery alarm event";
+"PushMsgIotLowBatteryEvent"     = "Battery is low,please replace the battery as soon as possible";
+"PushMsgIotDoorOpenEvent"       = "Door opened";
+"PushMsgIotDoorCloseEvent"      = "Door closed";
+"PushMsgIotDoorBreakEvent"      = "Tamper alarm event";
+"PushMsgIotPriEvent"            = "Infrared intrusion alarm event";
+"PushMsgIotSosEvent"            = "SOS alarm event";
+
+// TF 卡录像列表
+"TFCR_Title"                    = "事件回放";
+"TFCR_NoFiles"                  = "No file";
+"TFCR_Video"                    = "Video";
+"TFCR_Photo"                    = "Photo";
+"TFCR_NoVideo"                  = "暂无视频";
+"TFCR_NoPhoto"                  = "暂无图片";
+"TFCR_NoLatestFile"             = "暂无最新文件";
+"TFCR_NoLastFile"               = "已无文件";
+"TFCR_NoTFCardTitle"            = "Your camera has not been inserted with a memory card yet";
+"TFCR_NoTFCardTips1"            = "Insert a TF(Micro SD) memory card to allow automatic video recording";
+"TFCR_NoTFCardTips2"            = "Support a memory card up to 32G";
+"TFCR_NoTFCardTips3"            = "If memory card is not recognized after being inserted, please pull out and insert again";
+"TFCR_NoTFCardTips4"            = "请确保您的存储卡为FAT32 格式，或将TF卡经PC进行格式化为FAT32后插入设备";
+"TFCR_ExistDownloading"         = "有文件下载中，请稍后。。。";
+"TFCR_DownloadFalure"           = "下载失败";
+"TFCR_Tips"                     = "提示";
+"TFCR_IsCancelDownload"         = "是否取消下载该文件？";
+"TFCR_Stop"                     = "结束";
+"TFCR_IsLastPhoto"              = "已经是最后一张图片了！";
+"TFCR_IsLatestPhoto"            = "已经是最新一张图片了！";
+
+// TF 卡播放页面
+"TFCRP_Title"                   = "Video stored in TF card";
+
+// 云存储播放
+"CSP_LastVideoPlayed"           = "The last video has been played.";
+
+// 剪切页面
+"CLIP_Tip"                      = "Please enter the cut video name and click Save. If you want to edit the cut video, please edit in the album on the camera setting interface or the preview interface in playback.";
+"CLIP_TitleName"                = "Title name:";
+"CLIP_StartTimeTitle"           = "Start time";
+"CLIP_DurationTitle"            = "Duration";
+"CLIP_MinTitle"                 = "Min";
+"CLIP_SecTitle"                 = "Sec";
+"CLIP_SucceedTip"               = "Successfully cut,please view it in the album";
+"CLIP_FailedTip"                = "Fail to cut the video,please check network connection";
+"CLIP_FileNameEmptyTip"         = "裁减文件名不可为空";
+"CLIP_DurationZeroTip"          = "持续时间不可为零";
+
+// 播放页面
+"DeviceOffLine"                 = "Device offline";
+"VideoQualityHD"                = "HD";
+"VideoQualitySD"                = "SD";
+"RecordFailure"                 = "Record Failure";
+"RecordSuccess"                 = "Video saved to Photos";
+"SnapshotFailure"               = "抓拍失败！";
+"SnapshotSuccess"               = "Image saved to Photos";
+"TalkFileRecordFailure"         = "对讲录制失败";
+"StartTalkFileFailure"          = "开启对讲失败";
+"StopTalkFileFailure"           = "结束对讲失败";
+"SendTalkFileFailure"           = "Voice sending failed";
+
+// 我的
+"Mine_Logout"                   = "Logout";
+"Mine_UserAgreement"            = "User agreement";
+"Mine_Setup"                    = "Setting";
+"Mine_About"                    = "About";
+"Mine_FAQ"                      = "FAQ";
+"Mine_AdviceFeedback"           = "Feedback";
+"Mine_CloudSubscription"        = "Cloud Service Subscription";
+"Mine_MessageCenter"            = "Message center";
+"Mine_ExperienceCenter"         = "Experience center";
+"Mine_Loading"                  = "Loading";
+"Mine_ModifyLoginPassword"      = "Change password";
+"Mine_MessageCenterSetup"       = "Push notification setting";
+"Mine_Version"					= "Version";
+"Mine_NoMessage"				= "No push message";
+"Mine_Tip"						= "Tip";
+"Mine_DeleteMessageTips"		= "Are you sure you want to delete the selected push message?";
+"Mine_NoDevices"				= "暂无设备";
+"Mine_Renew"					= "Renew";
+"Mine_PlayedTimes"				= "PlayedTimes";
+//"Mine_UnknownWeb"				= "未知网页";
+"VRPlay_Voice"					= "Voice";
+"VRPlay_Cruise"					= "Cruise";
+"VRPlay_MountingMode"			= "Mounting mode";
+"VRPlay_DisplayMode"			= "Display mode";
+"VRPlay_Playback"				= "Playback";
+"VRPlay_Definition"				= "Definition";
+"NetworkError"                  = "Network error";
+"Mine_NoDeviceForCloud"			= "您尚未添加设备，请添加设备后开通云服务订阅";
+"Mine_GoToShop"					= "去购买";
+"Mine_DayInCycleRecording"		= "-day cycle recording";
+"Mine_ValidityPeriod"			= "Validity period";
+"Mine_InUse"					= "In use";
+"Mine_Unbind"					= "Removed";
+"Mine_Expired"					= "Expired";
+"Mine_Unpurchased"				= "Nonactivated";
+"Mine_Unuse"					= "Not in use";
+"Mine_Unbind_DeviceName"		= "Old camera(Removed)";
+//"Mine_PackageExpired"			= "Expired";
+"Mine_ServiceTransfer"			= "Service transfer";
+"Mine_NoDeviceCanBeTransfer" = "No forwardable Device";
+"Mine_Purchase"					= "Order";
+"Mine_DeviceNotSupportCloud"	= "Device does not support Cloud Service";
+"Mine_SelectDeviceToTransfer"	= "Select the camera that will be bound to the cloud service";
+"Mine_TransferConfirm"			= "Confirm selection";
+"Mine_TransferWipeTip"			= "Note: The original camera cloud historical video record will be cleared";
+"Mine_GetNetworkDataFailed"     = "Get Data Failed, please check network connection and retry";
+"Mine_CloudPlayback"            = "Cloud stored video";
+"Mine_DeviceNotPurchaseCloud"	= "Current device has not ordered cloud storage service";
+"Mine_OrderNow"					= "Order Now";
+
+/*-----------------------<设备添加分割线>------------------------------*/
+
+//设备添加
+//扫码界面
+"AddDEV_ScanError"              = "QR code format incorrect";
+"AddDEV_NotSuppotEN"            = "Device does not support English APP";
+"AddDEV_NotSuppotCN"            = "Device does not support Chinese APP";
+"AddDEV_DEVName"                = "camera";
+"AddDEV_NotSupportScan"         = "Device does not support QR code scanning";
+"AddDEV_BindDuplicated"         = "Device already added";
+"AddDEV_BindDuplicated_share"   = "Device already added";
+"AddDEV_BindByOther"            = "Already added by other account";
+"AddDEV_DEVNotExit"             = "Device does not exist";
+"AddDEV_NetTimeOut"             = "Network request timeout";
+"AddDEV_AddSuccess"             = "Add device succeeded";
+"AddDEV_AddFailed"              = "Add Failed";
+
+//设备添加首页
+"AddDEV_title"                  = "Add device";
+"AddDEV_tipOne"                 = "turn on and wait for device to start. When the red indicator lights flash, enter the configuration mode.";
+"AddDEV_tipTwo"                 = "If the red indicator light is not flash on for more than 2 minutes,press the \"SET\" button for 1 second.";
+"AddDEV_currentAddMethod"       = "current add method：";
+"AddDEV_lightQuickFlash"        = "Red indicator is Flashing,next step";
+"AddDEV_otherAddMethod"         = "other add method";
+
+//选择添加方法页
+"AddDEV_ChooseAddMethod_title"  = "select the add method";
+"AddDEV_WiFiAdd"                = "WiFi Add";
+"AddDEV_QRCodeAdd"              = "QR Code Add";
+"AddDEV_APAdd"                  = "AP Add";
+"AddDEV_LanAdd"                 = "Lan Add";
+"AddDEV_WiFiAdd_tip"            = "camera receives the information of WiFi configuration network through broadcasting";
+"AddDEV_QRCodeAdd_tip"          = "QR code is created in smartphone after input wifi information, then,put QR code before camera to read the wifi information and complete the network configuration automatically.";
+"AddDEV_APAdd_tip"              = "camera send a Wi-Fi hotspot,smartphone connects the hotspot and transmits configuration information to the camera.";
+"AddDEV_LanAdd_tip"             = "connect the camera with router by wire,smartphone and the camera are searched and connected under the same router.";
+
+//wifi设置页
+"AddDEV_wifiSet_title"          = "WiFi setting";
+"AddDEV_WiFiSet_tip"            = "";//缺少英文翻译
+"AddDEV_ChangeNet"              = "Change Network";
+"AddDEV_PlaceHolder_SSID"       = "WiFi SSID";
+"AddDEV_PlaceHolder_PWD"        = "";//缺少英文翻译
+"AddDEV_NextStep"               = "Next";
+"AddDEV_5GWiFi_tip"             = "camera won't support 5Ghz router, please change to a 2.4Ghz Router";
+"AddDEV_LenShort"               = "Wifi password can not be less than 8 bits";
+"AddDEV_LenLong"                = "Wifi password can not be more than 64 bits";
+
+//切换wifi提示页
+"AddDEV_ChangeNet_title"        = "Change Network";
+"AddDEV_ChangeNet_tip"          = "";//缺少英文翻译
+
+//扫描二维码页
+"AddDEV_Qrcode_title"           = "Scan QR code";
+//"AddDEV_Qrcode_tip"             = "put the QR code in smartphone towards camera lens\nclick \"next\" when we hear a short \"beep\"";
+"AddDEV_NoSound"                = "Did not hear any sound?";
+
+//没有听到声音Alert
+"AddDEV_NoSoundTitle"           = "Did not hear the sound?";
+"AddDEV_NoSoundText"            = "1: Make sure your camera is powered on.\n2: Make sure the status indicator blinks red.\n3: Make sure that the distance from QR code to camera is within 4-8 inches (10-20cm)";
+
+//添加失败Alert
+"AddDEV_addFailed"              = "Add Failed";
+"AddDEV_addFailed_tip"          = "1: Keep the device as close to the router as possible, verify that the WiFi name and password are correct, and there are no special characters. The router DHCP is on. \n\n2: long press the \"SET\" button for 5 seconds to reset the camera and start to connect again.";
+"AddDEV_networkCheck"           = "network detection";
+"AddDEV_otherMethodAdd"         = "other method add";
+
+//ap模式提示页
+"AddDEV_APTip1_GOS"             = "1.Go to \"Settings\" to set-up WiFi and select the specified network \"GOS-***\"";
+"AddDEV_APTip1_VR"              = "1.Go to \"Settings\" to set-up WiFi and select the specified network \"VR-***\"";
+"AddDEV_APTip2"                 = "2.Click on the APP pop-up to return to the Goscom APP";
+"AddDEV_APButton"               = "Go to setting";
+"AddDEV_APNotificaton"          = "Connection successful. Tap here to return to the GOSCAM app.";
+
+//网线快连页
+"AddDEV_LanTipOne"              = "1: Plug the camera internet cable into the router's LAN port";
+"AddDEV_LanTipTwo"              = "2: Connect your mobile phone to the same router network as the camera";
+
+//配置网络页
+"AddDEV_Net_config"             = "Network configuration";
+"AddDEV_FristStep"              = "Step 1: Connecting";
+"AddDEV_SecondStep"             = "Step 2: Binding";
+"AddDEV_ThirdStep"              = "Step 3: Connection success";
+"AddDEV_configTip"              = "It will take about 1-2 minutes to connect to WiFi network, please wait";
+"AddDEV_Restore_tip"            = "To make sure add it successfully, the device needs to be restored the factory default settings first.";
+"AddDEV_GotIt"                  = "Got it";
+"AddDEV_BeBind_tip"             = "The device is bound by you already";
+"AddDEV_CofigSuccess"           = "Add device succeeded";
+
+//设备命名提示框
+"AddDEV_AddSuccess"             = "Device successfully added";
+"AddDEV_SetNameTip"             = "Please name the device";
+"AddDEV_InputNameTip"           = "input the name:";
+"AddDEV_Confirm"                = "Confirm";
+"AddDEV_NameNullTip"            = "Device name shall not be empty";
+"AddDEV_NameReUse"              = "camera name repeat";
+
+// 网络检测
+"NetCheckTopTip"                = "Current network status";
+"NetCheckDetectIng"             = "检测中";
+"NetCheckSuccessfulTip"         = "To check the network status of the camera, please use your cell phone and camera connect to the same network";
+"NetCheckFailedTip"             = " The current network test is not passed:\n 1.Please check the router settings or disable the firewall function\n 2.Replacement of WiFi network environment\n 3.Contact network operators";
+"NetcheckReload"                =  "Recheck";
+"NetcheckReloadLogin"           = "重新登录";
+"NetcheckReloadAdd"             = "重新添加";
+"Network_Check"                 = "network detection";
+"Network_Sent"                  = "Sent";
+"Network_Received"              = "Received";
+"Network_UploadSpeed"           = "上行";
+"Network_DownSpeed"             = "下行";
+
+/*-----------------------<设备添加分割线>------------------------------*/
+
+/*-----------------------<商城页面分割线>------------------------------*/
+//商城页面
+"Mall_Share"                    = "Share";
+/*-----------------------<商城页面分割线>------------------------------*/
+
+/*-----------------------<分割线>------------------------------*/
+// 设置翻译
+// alex(第三方接入)
+"ThirdParty_Btn_Alexa_Title"             = "Jump to Alexa";
+"ThirdParty_Btn_GoogleHome_Title"        = "Jump to Google Assistant";
+
+// 运动检测
+"Setting_MotionSensitivity"              = "Motion sensitivity";
+"Setting_Sensitivity_Low"                = "Low";
+"Setting_Sensitivity_Default"            = "Default";
+"Setting_Sensitivity_High"               = "High";
+"Setting_MoniterArea"                    = "Detection area";
+"Setting_MoniterArea_SelectArea"         = " =Selected areas";
+"Setting_SelectAreaReminder"             = "You will receive alerts for these areas \n\"Motion detection\" is turned on, if the camera detects the screen changes it will have a hort video, this video way in the TF card inside icon is ";
+
+//声音检测
+"Setting_VoiceSensitivity"               = "Sound sensitivity";
+"Setting_Voice_Tips"                     = "\"Voice detection\" is turned on, if the camera detects the voice changes it will have a hort video, this video way in the TF card inside icon is ";
+
+// 温度报警
+"Temperature_floor"                      = "Minimum temperature";
+"temperature_ceiling"                    = "Maximum temperature";
+"temperature_ceiling_temperature"        = "Maximum temperature setting";
+"temperature_floor_temperature"          = "Minimum temperature setting";
+
+// 云录制套餐
+"CS_PackageType_DataLife"                = "Retention time";
+"CS_PackageType_PackageType"             = "Service type";
+"CS_PackageType_Price"                   = "Price";
+"CS_PackageType_Days"                    = " days ";
+"CS_PackageType_Month"                   = " month";
+"CS_PackageType_Year"                    = " year";
+"CS_PackageType_FreeTryTitle2"           = "Try 7 days cloud storage 1 month package for free";
+"CS_Package_Pay"                         = "Pay";
+"PackageInformation"                     = "套餐信息";
+"PackageNameInfo"                        = "套餐名称";
+"PackageUnitPrice"                       = "Unit price";
+"PackageQuantity"                        = "Quantity";
+"PackageTotalPrice"                      = "Total";
+"PackageNeedToPay"                       = "Need to pay";
+"PackageChoosePaymentType"               = "Option of payment";
+"PaymentTypeWeChat"                      = "WeChat pay";
+"PaymentTypeAliPay"                      = "AliPay";
+"PaymentTypePayPal"                      = "PayPal";
+"PackageConfirmPay"                      = "Confirm payment";
+"CS_Agree_CSAgreement"                   = "Purchase means the agreement is accepted Cloud Recording Service Agreement";
+"CS_CSAgreement"                         = "Cloud Recording Service Agreement";
+"PackageOrder"                           = "Package order";
+"PackageTypeDays_Time1"                  = " cloud storage ";
+"PackageTypeDays_Time2"                  = " package";
+"PackagePay_fail"                        = "支付失败";
+"PackagePay_Cancel"                      = "支付取消";
+"PackagePayBuy_Fail"                     = "购买失败";
+"PackagePay_Success"                     = "购买成功";
+"PackagePayOrder_Fail"                   = "生成订单失败";
+"Setting_PayOrderGenerate"               = "订单生成中";
+"Setting_PayOrderPaying"                 = "订单支付中";
+"Setting_PayOrderPaycheck"               = "订单校验中";
+"Setting_PayOrderPayResult"              = "支付订单校验中";
+"Setting_PayOrderResultcheck"            = "支付结果查询中";
+"Setting_PayOrderResultQuery"            = "订单查询中";
+"Setting_payFreeOrderSuccess"            = "免费试用开通成功";
+"Setting_payFreeOrderFail"               = "免费试用开通失败";
+"Cloud_PackageValidTime"                 = "Package valid time";
+"Cloud_VideoReservedTime"                = "Video retention time";
+"Cloud_PackageRenew"                     = "Renew";
+"Cloud_PackageDetails"                   = "套餐详情";
+
+// 夜视
+"NightVersion_Switch"                    = "Night vision always ON";
+"NightVersion_Auto"                      = "Automatic (default)";
+"NightVersion_Open"                      = "ON";
+
+// 好友分享
+"DevShare_InputUserName"                 = "Enter share user id:";
+"DevShare_Title_SharedUsers"             = "Already shared users";
+"cloudShare_share_success"               = "share success";
+"cloudShare_share_failed"                = "share failed";
+"cloudShare_delete_success"              = "删除成功";
+"cloudShare_delete_fail"                 = "删除失败";
+
+// 相册
+"Video"                                  = "Video";
+"pic"                                    = "Photo";
+"no_pic"                                 = "暂无图片";
+"no_Video"                               = "暂无视频";
+"photo_DeletePhotoTips"                  = "确定要删除已选择的文件吗？";
+"photo_SaveToSystemSuccess"              = "Image saved to System Photos";
+"photo_SaveToSystemFail"                 = "保存在系统相册失败";
+
+//摄像头时间校验
+"CameraTimeCheck_Tips_Title"             = "Time on the real time picture of camera is from network; If you find that the time on the camera does not match the time on the mobile phone, please calibrate the camera time.";
+"CameraTimeCheck_OpResult_Succeeded"     = "Time check succeeded";
+"CameraTimeCheck_OpResult_Failed"        = "Time check failed";
+
+//WiFi设置
+"WiFiSetting_DeviceOnLine"               = "Device online";
+"WiFiSetting_DeviceOffLine"              = "Device offline";
+"WiFi_setting_online"                    = "WiFi setting";
+"Setting_WiFiConnect"                    = "Connect WiFi";
+"WiFiSetting_CameraCloseToRouter"        = "Put the camera as close as possible to the router";
+"Setting_NextStep"                       = "Next";
+"ADDDevice_Set"                          = "Please press and hold the \"SET\" key for 1 second, and then you will hear a \"Beep\" sound";
+"WiFiSetting_PhoneConnectedToWiFi"       = "Make sure the mobile phone has been connected to WiFi network";
+"Input_WiFiAccount"                      = "请输入WiFi账号";
+"Input_WiFiPassword"                     = "请输入WiFi密码";
+"ADDDevice_Qrcode_tip"                   = "put the QR code in smartphone towards camera lens\nclick \"next\" when we hear a short \"beep\"";
+"Qrcode"                                 = "Scan QR code";
+"Configure_show_tip"                     = "1: Verify if WiFi name and password contain special characters and if DHCP on router is switched on.\n\n2: Verify if 2.4G WiFi is connectetd instead of 5G WiFi.\n\n3: Verify if the WiFi password is correct\n\n4: It is recommended to connect the device close to the router";
+"Configure_show_tip2"                    = "Solution for failed add";
+"Configure_back"                         = "Back to configuration";
+"Configure_BackToDevListVC"              = "Back to device list page";
+"Qrcode_tipsTitle"                       = "Did not hear the sound?";
+"Qrcode_textView"                        = "1: Make sure your camera is powered on.\n\n2: Make sure the status indicator blinks red.\n\n3: Make sure that the distance from QR code to camera is within 4-8 inches (10-20cm)";
+"Qrcode_soundBtn"                        = "I have heard it";
+"Qrcode_unsoundBtn"                      = "Did not hear any sound?";
+"Qrcode_scanThreeViewTipsLabel"          = "Did you see the green light blinking? it is about to be finished";
+"Qrcode_ScanThreeView"                   = "Connect router";
+"Qrcode_notRemind"                       = "不再提示";
+
+//设备信息
+"DevInfo_SDCard"                         = "TF card";
+"Format_SD_card"                         = "Want to clear the SD card? If you do this, you will lose all the data stored in it!";
+"Format"                                 = "Format the SD card";
+"Format_SD_card_success"                 = "SD card format succeeded";
+"Format_SD_card_unsuccess"               = "SD card format failed";
+"Format_SD_Warning"                      = "In the formatted SD card, do not power off or pull the card to avoid damage";
+"Update_UpdateError_TryAgainLater"       = "Upgrade failed, please try later";
+"Update_Tips_DowloadComplete" = "Download succeeded, camera will automatically restart later to upgrade, please wait";
+"update_to"                              = "Can be updated to";
+"Update_Tips_Downloading"                = "Camera application firmware is about to upgrade, it will take about 4-5 minutes (depending on network speed); make sure that the camera does not power off during this process!";
+"Update_Downloading"                     = "Downloading";
+"Update_FirmwareUpdate"                  = "Firmware update";
+"Update_UpdateRightNow"                  = "Update now";
+"Update_DownloadErrorTryAgain"           = "Upgrade failed, please redownload";
+"Update_CancelSucceeded"                 = "Cancel upgrade succeeded";
+"Update_CancelUnSucceeded"               = "取消升级失败";
+"DevInfo_DevName"                        = "Device name";
+"system_firmware"                        = "System firmware";
+"CameraNameRepeat"                       = "camera name repeat";
+"ModifyFailure"                          = "Modify failed";
+"DeviceName_Default_LivingRoom"          = "Living room";
+"DeviceName_Default_Bedroom"             = "Bedroom";
+"DeviceName_Default_BabysRoom"           = "Baby room";
+"DeviceName_Default_Gate"                = "Gate";
+"DeviceName_Default_Garage"              = "Garage";
+"DeviceName_Default_Office"              = "Office";
+"DevInfo_CameraVersion"                  = "Camera version";
+"used_storage"                           = "Used space";
+"free_storage"                           = "Available space";
+"DevInfo_WiFiName"                       = "WiFi name";
+"DevInfo_DevID"                          = "Device ID";
+"DevInfo_DevModelNum"                    = "Device model";
+"DevInfo_CameraInfo"                     = "Camera information";
+"firmware_version"                       = "Hardware version";
+"DeviceName_CurrentName"                 = "Current name";
+"DeviceName_DefaultName"                 = "Default name";
+
+//通话模式设置
+//灯照时长
+"LightDuration_Setting"                  = "Lighting duration setting";
+"LightDuration_WholeDayOff"              = "Whole day off";
+"LightDuration_OnTime"                   = "Turn on time";
+"LightDuration_OffTime"                  = "Turn off time";
+"LightDuration_Repeat"                   = "Repeat";
+"LightDuration_Sun"                      = "Sun";
+"LightDuration_Mon"                      = "Mon";
+"LightDuration_Tue"                      = "Tues";
+"LightDuration_Wed"                      = "Wed";
+"LightDuration_Thur"                     = "Thur";
+"LightDuration_Fri"                      = "Fri";
+"LightDuration_Sat"                      = "Sat";
+
+//添加传感器
+"Setting_StartAddBtnTitle"               = "Start Add";
+"Setting_EditSensorName"                 = "Modify the defence area name";
+"Setting_DefenceArea"                    = "Defence area";
+"Setting_ModifySensorSucces"             = "修改成功";
+"Setting_addRepeat"                      = "重复添加";
+
+// 门磁安装添加步骤
+"Setting_Magnetic"                       = "Magnet";
+"AddMagneticStep1"                       = "1.Install battery and remove insulating sheet of the device";
+"AddMagneticStep2"                       = "2.Keep the device within the effective communication distance of gateway";
+"AddMagneticStep3"                       = "3.Please click \"Start Add\" and then trigger the device according to the animation demo as shown in the figure above.";
+
+// 红外安装添加步骤
+"Setting_Infrared"                       = "Infrared intrusion detector";
+"AddInfraredStep1"                       = "1.Install battery";
+"AddInfraredStep2"                       = "2.Keep the device within the effective communication distance of gateway";
+"AddInfraredStep3"                       = "3.Please click \"Start Add\" and then trigger the device according to the animation demo as shown in the figure above.";
+
+// 声光报警器安装添加步骤
+"Setting_AudibleAlarm"                   = "Audible and visual alarm";
+"AddAudibleAlarmStep1"                   = "1.Insert the power cord into a socket to power up the device or turn on the device backup battery switch";
+"AddAudibleAlarmStep2"                   = "2.Keep the device within the effective communication distance of gateway";
+"AddAudibleAlarmStep3"                   = "3.Please click \"Start Add\" and then trigger the device according to the animation demo as shown in the figure above.";
+
+// SOS 安装添加步骤
+"Setting_Sos"                            = "SOS button";
+"AddSosStep1"                            = "1.Keep the device within the effective communication distance of gateway";
+"AddSosStep2"                            = "2.Please click \"Start Add\" and then trigger the device";
+
+//情景任务
+"Setting_SceneTaskTitle"                 = "Scene task title";
+"Setting_SatisfyTitle"                   = "When any condition is met";
+"Setting_CarryoutTitle"                  = "Execute following tasks";
+"Setting_HaveNotYetSceneCondition"       = "No conditions added yet";
+"Setting_HaveNotYetSceneTask"            = "还未添加任务";
+"Setting_HaveNoSatisfy"                  = "No sensor selectable";
+"Setting_HaveNoCarryout"                 = "No device selectable";
+"Setting_SelectSensor"                   = "Select device";
+"Setting_DeleteSceneTaskTip"             = "Are you sure you want to delete the task?";
+"Setting_SceneTaskReName"                = "重命名";
+"Setting_SceneTaskInput"                 = "请输入名称";
+"Setting_Tips"                           = "提示";
+"Setting_TipsContents"                   = "执行条件或任务不能为空，请添加";
+"Setting_hasNotSceneList"                = "暂无情景任务";
+
+//音乐播放
+//设置界面
+"Setting_SettingTitle"                   = "Setting";
+"Setting_MotionDetection"                = "Motion detection";
+"Setting_TempAlarmSetting"               = "Temperature alarm";
+"Setting_CameraSwitch"                   = "Video privacy mode";
+"Setting_CameraMicrophone"               = "Camera microphone";
+"Setting_CloudService"                   = "Cloud storage service";
+"Setting_StatusIndicator"                = "Status indicator";
+"Setting_RotateSemicircle"               = "Rotate video 180 degrees";
+"Setting_NightVersion"                   = "Night vision";
+"Setting_ShareWithFriends"               = "Share with friends";
+"Setting_ManualRecord"                   = "TF card manual record";
+"Setting_PhotoAlbum"                     = "Album";
+"Setting_TimeCheck"                      = "Camera time check";
+"Setting_WiFiSetting"                    = "WiFi setting";
+"Setting_DeviceInfo"                     = "Device information";
+"Setting_PIRDetection"                   = "Infrared detection";
+"Setting_CellularDataAutoPause"          = "Cellular mobile network auto pause";
+"Setting_VoiceDetection"                 = "Sound detection";
+"Setting_Alexa"                          = "Accessed by the third party"; // "Alexa";
+"Setting_LightDuration"                  = "Light duration";
+"Setting_AddSensor"                      = "Add sensor";
+"Setting_SceneTask"                      = "Scene task";
+"Setting_BabyMusic"                      = "Lullabies";
+"Setting_DeleteDevice"                   = "Delete device";
+"GosComm_DeleteFailure"                  = "删除失败";
+"Setting_DeleteDeviceTips"               = "确定要删除设备吗?";
+"Setting_DeviceOffLine"                  = "Device offline";
+
+/*-----------------------<分割线>------------------------------*/
+

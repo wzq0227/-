@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CloudServiceHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="套餐类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTd-HV-13s">
+                    <rect key="frame" x="113.5" y="17.5" width="114" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGQ-Nz-usg">
+                    <rect key="frame" x="227.5" y="18" width="113.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="录像保存 (循环)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACT-VL-MHN">
+                    <rect key="frame" x="0.0" y="17.5" width="113.5" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EGQ-Nz-usg" firstAttribute="width" secondItem="ACT-VL-MHN" secondAttribute="width" id="8jf-Pv-JqJ"/>
+                <constraint firstItem="sTd-HV-13s" firstAttribute="width" secondItem="ACT-VL-MHN" secondAttribute="width" id="8lG-Fr-9D3"/>
+                <constraint firstItem="sTd-HV-13s" firstAttribute="leading" secondItem="ACT-VL-MHN" secondAttribute="trailing" id="ESm-Kz-xbf"/>
+                <constraint firstItem="ACT-VL-MHN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Enk-xM-cU4"/>
+                <constraint firstItem="ACT-VL-MHN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="I8e-jL-VGs"/>
+                <constraint firstAttribute="trailing" secondItem="EGQ-Nz-usg" secondAttribute="trailing" id="Kav-uG-vMu"/>
+                <constraint firstItem="EGQ-Nz-usg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="azq-nk-cNU"/>
+                <constraint firstItem="sTd-HV-13s" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qHC-PC-iCe"/>
+                <constraint firstItem="EGQ-Nz-usg" firstAttribute="leading" secondItem="sTd-HV-13s" secondAttribute="trailing" id="tAe-II-jFl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="packageTypeLab" destination="sTd-HV-13s" id="OT5-kC-EWV"/>
+                <outlet property="priceLab" destination="EGQ-Nz-usg" id="nbA-Bx-0F1"/>
+                <outlet property="saveLifeLab" destination="ACT-VL-MHN" id="3EX-mi-ePQ"/>
+            </connections>
+            <point key="canvasLocation" x="-57" y="126"/>
+        </view>
+    </objects>
+</document>

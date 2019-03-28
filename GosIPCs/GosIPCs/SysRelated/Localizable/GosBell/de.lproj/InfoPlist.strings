@@ -1,0 +1,17 @@
+/* 
+  InfoPlist.strings
+  GosIPCs
+
+  Created by shenyuanluo on 2018/11/12.
+  Copyright © 2018 shenyuanluo. All rights reserved.
+*/
+
+/*
+ 英语
+ */
+
+
+"CFBundleDisplayName"               = "Bell";
+"NSCameraUsageDescription"          = "You need to allow the camera to be turned on to scan the code";
+"NSPhotoLibraryUsageDescription"    = "You need to allow open albums to save images";
+"NSMicrophoneUsageDescription"      = "You need to allow the microphone to be turned on to send voice message";

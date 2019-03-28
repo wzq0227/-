@@ -1,0 +1,36 @@
+iOSPlayerSDK 代码修改 log
+
+
+【2019-03-04】：Modify by shenyuanluo
+1、添加解码 H264 文件获取预览图单独接口
+
+
+【2019-02-28】：Modify by shenyuanluo
+1、解决解码 SDK 录像流状态无法回调 bug
+
+
+【2019-02-22】：Modify by shenyuanluo
+1、添加解码 SD 卡录制 H264文件相关接口和回调
+
+
+【2019-02-19】：Modify by shenyuanluo
+1、添加 VR 解码数据回调接口
+
+
+【2019-02-18】：Modify by shenyuanluo
+1、添加解码 H264 数据回调
+2、添加剪切 H264 并转换为 Mp4 接口
+
+
+【2019-02-15】：Modify by shenyuanluo
+1、添加解码 H264 状态结果回调
+2、添加设置自动渲染接口
+
+
+【2019-02-14】：Modify by shenyuanluo
+1、添加解码 H264 文件接口
+2、添加获取 H264 文件指定时间预览图接口
+
+
+【2018-12-03】：Modify by shenyuanluo
+1、解决解码结束无法释放内存 bug

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SceneTaskCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="情景任务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIC-1o-43F">
+                        <rect key="frame" x="15" y="12" width="66" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zAu-30-htf">
+                        <rect key="frame" x="259" y="6.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="actionSwitchClick:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Lxh-06-wGQ"/>
+                        </connections>
+                    </switch>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvz-Hi-5YO">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3uN-dh-UHa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zAu-30-htf" secondAttribute="trailing" constant="12" id="HHP-m8-A8F"/>
+                    <constraint firstAttribute="trailing" secondItem="vvz-Hi-5YO" secondAttribute="trailing" id="Mxr-EQ-rQ7"/>
+                    <constraint firstItem="VIC-1o-43F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="UbN-vg-TXK"/>
+                    <constraint firstItem="zAu-30-htf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i7J-v6-2rW"/>
+                    <constraint firstItem="VIC-1o-43F" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="j2L-Av-Do5"/>
+                    <constraint firstItem="vvz-Hi-5YO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lw5-wY-aoj"/>
+                    <constraint firstAttribute="bottom" secondItem="vvz-Hi-5YO" secondAttribute="bottom" id="zTe-eQ-jaa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="onSwitch" destination="zAu-30-htf" id="G0J-mU-VeB"/>
+                <outlet property="titleLab" destination="VIC-1o-43F" id="i3H-WL-VhE"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="48.575712143928037"/>
+        </tableViewCell>
+    </objects>
+</document>

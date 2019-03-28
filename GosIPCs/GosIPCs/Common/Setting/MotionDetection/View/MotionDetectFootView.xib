@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MotionDetectFootView">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="161"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Wd-bH-4pH">
+                    <rect key="frame" x="30" y="10" width="32" height="18"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.96862745098039216" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="5jG-AC-r3g"/>
+                        <constraint firstAttribute="width" constant="32" id="ZRN-Vf-NCg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=选中区域" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zo1-IX-z9i">
+                    <rect key="frame" x="64" y="11.5" width="57" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你将会获得这些区域的提醒，“运动检测”开启后，如果摄像头检测到画面变化则会进行短，暂录像，此录像方式在TF卡里面的代表图标为" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdI-Qj-Rhw">
+                    <rect key="frame" x="30" y="36" width="302" height="43"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsf-8A-yuo">
+                    <rect key="frame" x="50" y="91" width="242" height="40"/>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.68627450980000004" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cpV-1L-tsh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="全 选"/>
+                    <connections>
+                        <action selector="actionAllSelectClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="JH1-5e-uH8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Lsf-8A-yuo" secondAttribute="trailing" constant="50" id="GUr-52-L77"/>
+                <constraint firstItem="JdI-Qj-Rhw" firstAttribute="top" secondItem="1Wd-bH-4pH" secondAttribute="bottom" constant="8" id="GwE-fW-MbN"/>
+                <constraint firstItem="zo1-IX-z9i" firstAttribute="centerY" secondItem="1Wd-bH-4pH" secondAttribute="centerY" id="TWI-17-HYH"/>
+                <constraint firstItem="1Wd-bH-4pH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="dsx-s8-CRx"/>
+                <constraint firstItem="zo1-IX-z9i" firstAttribute="leading" secondItem="1Wd-bH-4pH" secondAttribute="trailing" constant="2" id="hAL-Aq-pvY"/>
+                <constraint firstItem="1Wd-bH-4pH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="j0m-LM-UzF"/>
+                <constraint firstAttribute="trailing" secondItem="JdI-Qj-Rhw" secondAttribute="trailing" constant="10" id="mmb-XF-uUF"/>
+                <constraint firstAttribute="bottom" secondItem="Lsf-8A-yuo" secondAttribute="bottom" constant="30" id="r9z-sG-Hqx"/>
+                <constraint firstItem="Lsf-8A-yuo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="ril-jR-hvs"/>
+                <constraint firstItem="JdI-Qj-Rhw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="sj3-Qs-k68"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allSelectBtn" destination="Lsf-8A-yuo" id="msa-oC-Ij5"/>
+                <outlet property="areaTitleLab" destination="zo1-IX-z9i" id="Cip-BK-PyJ"/>
+                <outlet property="promptLab" destination="JdI-Qj-Rhw" id="xQ4-HX-w6x"/>
+            </connections>
+            <point key="canvasLocation" x="2" y="129.5"/>
+        </view>
+    </objects>
+</document>

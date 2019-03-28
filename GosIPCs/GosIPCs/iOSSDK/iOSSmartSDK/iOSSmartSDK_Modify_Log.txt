@@ -1,0 +1,18 @@
+iOSSmartSDK 代码修改 log
+
+
+【2019-01-18】：Modify by shenyuanluo
+1、解决扫描 ‘全景360’设备二维码解析出错问题
+
+
+【2018-12-25】：Modify by shenyuanluo
+1、解决扫描控制器‘QRCodeReaderViewController’无法释放导致内存泄露问题
+
+
+【2018-12-05】：Modify by shenyuanluo
+1、添加扫码控制器异步退出接口
+
+
+【2018-12-05】：Modify by shenyuanluo
+1、添加扫描返回是否支持硬解绑标识
+2、添加搜索并获取设备信息方法：extractInfoWithDevId:timeout:

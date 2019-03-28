@@ -1,0 +1,6 @@
+framework module iOSPaymentSDK {
+  umbrella header "iOSPaymentSDK.h"
+
+  export *
+  module * { export * }
+}

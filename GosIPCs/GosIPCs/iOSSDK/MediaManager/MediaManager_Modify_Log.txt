@@ -1,0 +1,41 @@
+MediaManager 代码修改 log
+
+
+【2019-02-19】：Modify by shenyuanluo
+1、添加云存储裸流（H264）预览图媒体文件类型支持
+2、添加文件名后缀大小写兼容
+
+
+【2019-02-14】：Modify by shenyuanluo
+1、添加云存储裸流（H264）媒体文件类型支持
+2、添加TF卡录像（视频流）媒体文件类型支持
+
+
+【2019-01-15】：Modify by shenyuanluo
+1、解决获取封面/推送图片已提供文件名而导致问题读取错误问题
+
+
+【2019-01-03】：Modify by shenyuanluo
+1、添加清空指定设备缓存接口：cleanOfDevice:deviceType:
+
+
+【2019-01-02】：Modify by shenyuanluo
+1、添加 TF 卡录制视频、抓拍图片媒体文件类型支持
+
+
+【2018-12-20】：Modify by shenyuanluo
+1、添加推送图片媒体文件类型支持
+
+
+【2017-07-26】：Modify by shenyuanluo
+1、修改支持最低版本为：8.0
+2、修改默认图片资源管理为：Bundle
+
+
+【2017-07-21】：Modify by shenyuanluo
+1、添加获取媒体保存路径接口
+2、添加视频最后一帧图片获取接口
+
+
+【2018-11-24】：Modify by shenyuanluo
+1、 添加 armv7 支持

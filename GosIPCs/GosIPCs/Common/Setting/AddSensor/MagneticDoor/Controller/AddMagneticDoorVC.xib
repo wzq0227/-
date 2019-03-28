@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddMagneticDoorVC">
+            <connections>
+                <outlet property="addBtn" destination="g5H-xd-TRs" id="DHv-CI-1V0"/>
+                <outlet property="gifImg" destination="dGj-R7-XiA" id="XOR-8R-zc0"/>
+                <outlet property="tips1Lab" destination="B3g-sT-oWh" id="fyM-Gg-Flu"/>
+                <outlet property="tips2Lab" destination="U9Q-K1-AkT" id="Q7P-nt-IGv"/>
+                <outlet property="tips3Lab" destination="Oaz-Fd-PBO" id="DF6-5y-NGY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.安装电池，取掉设备绝缘片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3g-sT-oWh">
+                    <rect key="frame" x="20" y="274.5" width="181.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.使设备处于网关的有效通讯距离内" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9Q-K1-AkT">
+                    <rect key="frame" x="20" y="311.5" width="226.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.请点击“开始添加”，然后按上图中动画演示触发设备" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaz-Fd-PBO">
+                    <rect key="frame" x="20" y="348.5" width="340" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-xd-TRs">
+                    <rect key="frame" x="30" y="547" width="315" height="40"/>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.68627450980000004" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ONY-HO-cHi"/>
+                    </constraints>
+                    <state key="normal" title="开始添加"/>
+                    <connections>
+                        <action selector="actionStartClick:" destination="-1" eventType="touchUpInside" id="0vg-gZ-s2k"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGj-R7-XiA">
+                    <rect key="frame" x="20" y="25" width="335" height="229.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dGj-R7-XiA" secondAttribute="height" multiplier="301:206" id="k0V-Mn-Tqv"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="g5H-xd-TRs" secondAttribute="bottom" constant="80" id="23D-74-TsE"/>
+                <constraint firstItem="U9Q-K1-AkT" firstAttribute="leading" secondItem="B3g-sT-oWh" secondAttribute="leading" id="GX5-Jd-unC"/>
+                <constraint firstItem="Oaz-Fd-PBO" firstAttribute="leading" secondItem="B3g-sT-oWh" secondAttribute="leading" id="LZI-dH-VeT"/>
+                <constraint firstAttribute="trailing" secondItem="g5H-xd-TRs" secondAttribute="trailing" constant="30" id="RqN-Ue-4ha"/>
+                <constraint firstItem="dGj-R7-XiA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="YB5-w1-VbK"/>
+                <constraint firstItem="B3g-sT-oWh" firstAttribute="leading" secondItem="dGj-R7-XiA" secondAttribute="leading" id="ckc-Dv-xNZ"/>
+                <constraint firstAttribute="trailing" secondItem="dGj-R7-XiA" secondAttribute="trailing" constant="20" id="hUP-O4-ih6"/>
+                <constraint firstItem="dGj-R7-XiA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="k06-Si-Z7n"/>
+                <constraint firstItem="Oaz-Fd-PBO" firstAttribute="top" secondItem="U9Q-K1-AkT" secondAttribute="bottom" constant="20" id="naX-9M-ZRf"/>
+                <constraint firstItem="g5H-xd-TRs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="oF6-oP-knB"/>
+                <constraint firstItem="U9Q-K1-AkT" firstAttribute="top" secondItem="B3g-sT-oWh" secondAttribute="bottom" constant="20" id="pIF-Qo-GDQ"/>
+                <constraint firstItem="B3g-sT-oWh" firstAttribute="top" secondItem="dGj-R7-XiA" secondAttribute="bottom" constant="20" id="rnN-R9-SRm"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,41 @@
+//
+//  Goscom-Prefix.pch
+//  Goscom
+//
+//  Created by shenyuanluo on 2018/11/10.
+//  Copyright © 2018 shenyuanluo. All rights reserved.
+//
+
+#ifndef Goscom_Prefix_pch
+#define Goscom_Prefix_pch
+
+#import "MacroDefinition.h"
+#import "LocalizableStrings.h"
+#import "EnlargeClickButton.h"
+#import "SVProgressHUD.h"
+#import "MediaManager.h"
+#import "Masonry.h"
+#import "GosHUD.h"
+#import "QueueManager.h"
+#import "GosLock.h"
+#import "GosReadWriteLock.h"
+
+
+/* Target 类型枚举 */
+typedef enum {
+    Target_Goscom       = 0,        // 中性：Goscom Target
+    Target_GosBell      = 1,        // 门灯
+}TargetValue;
+
+
+#define DPLocalizedString(s) [LocalizableStrings LocalizedString:s]    // 多语言化
+
+// 获取
+#define GOS_GET_OBJ(key)    [[NSUserDefaults standardUserDefaults] objectForKey:key]
+// 存储
+#define GOS_SAVE_OBJ(object, key)   [[NSUserDefaults standardUserDefaults] setObject:object forKey:key]; [[NSUserDefaults standardUserDefaults] synchronize];
+
+#define APP_VERSION_KEY @"SaveAppVersionKey"    // APP 版本保存 key
+
+
+#endif /* Goscom_Prefix_pch */

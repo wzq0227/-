@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WiFiSettingScanQrVC">
+            <connections>
+                <outlet property="hearBtn" destination="YR4-Cc-3Vw" id="ZhB-nj-enM"/>
+                <outlet property="scanQRImg" destination="ZMG-u5-qcR" id="MQc-l9-bE0"/>
+                <outlet property="tipsBtn" destination="xAO-Kc-0An" id="3Td-IP-0MR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZMG-u5-qcR">
+                    <rect key="frame" x="20" y="50" width="335" height="335"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ZMG-u5-qcR" secondAttribute="height" multiplier="1:1" id="ecl-Ga-Uyh"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAO-Kc-0An">
+                    <rect key="frame" x="132" y="415" width="111" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="没有听到任何声音？">
+                        <color key="titleColor" red="0.33333333333333331" green="0.68627450980392157" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionNotVoiceClick:" destination="-1" eventType="touchUpInside" id="HGX-2u-tgr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR4-Cc-3Vw">
+                    <rect key="frame" x="40" y="492" width="295" height="40"/>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.68627450980000004" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BWR-Le-hwl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="我听到了">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="actionNextStepClick:" destination="-1" eventType="touchUpInside" id="orC-E0-iaF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZMG-u5-qcR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="4rA-yZ-09h"/>
+                <constraint firstItem="xAO-Kc-0An" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Adq-pj-SkW"/>
+                <constraint firstItem="YR4-Cc-3Vw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="bTX-68-1IW"/>
+                <constraint firstItem="YR4-Cc-3Vw" firstAttribute="top" secondItem="xAO-Kc-0An" secondAttribute="bottom" constant="50" id="dcW-TZ-BHK"/>
+                <constraint firstItem="ZMG-u5-qcR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="j74-2y-Mf4"/>
+                <constraint firstItem="xAO-Kc-0An" firstAttribute="top" secondItem="ZMG-u5-qcR" secondAttribute="bottom" constant="30" id="pwn-qP-bwy"/>
+                <constraint firstAttribute="trailing" secondItem="ZMG-u5-qcR" secondAttribute="trailing" constant="20" id="rVP-si-qee"/>
+                <constraint firstAttribute="trailing" secondItem="YR4-Cc-3Vw" secondAttribute="trailing" constant="40" id="svX-19-MiN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

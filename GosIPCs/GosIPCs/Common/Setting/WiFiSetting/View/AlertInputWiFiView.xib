@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertInputWiFiView">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="204"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfi-Os-J3J">
+                    <rect key="frame" x="146" y="164" width="145" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="I4n-rA-DH0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="设置">
+                        <color key="titleColor" red="0.33333333329999998" green="0.68627450980000004" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionSureClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="igU-vp-Wuc"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XH-NR-gzi">
+                    <rect key="frame" x="0.0" y="0.0" width="291" height="163"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WiFi设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p48-Gj-pYc">
+                            <rect key="frame" x="109.5" y="15" width="72" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Office001" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCN-A6-CHL">
+                            <rect key="frame" x="30" y="57" width="231" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="aFD-fc-XMg"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入WiFi密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8jQ-hq-eQV">
+                            <rect key="frame" x="30" y="112" width="231" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6cz-h1-e7v"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8jQ-hq-eQV" firstAttribute="top" secondItem="sCN-A6-CHL" secondAttribute="bottom" constant="15" id="0Rb-Tq-igL"/>
+                        <constraint firstItem="sCN-A6-CHL" firstAttribute="leading" secondItem="5XH-NR-gzi" secondAttribute="leading" constant="30" id="FEV-z5-lDw"/>
+                        <constraint firstItem="p48-Gj-pYc" firstAttribute="centerX" secondItem="5XH-NR-gzi" secondAttribute="centerX" id="GLJ-Wx-kvh"/>
+                        <constraint firstItem="sCN-A6-CHL" firstAttribute="top" secondItem="p48-Gj-pYc" secondAttribute="bottom" constant="20" id="GpV-6D-TDt"/>
+                        <constraint firstItem="8jQ-hq-eQV" firstAttribute="leading" secondItem="5XH-NR-gzi" secondAttribute="leading" constant="30" id="Wld-Ph-6E4"/>
+                        <constraint firstItem="p48-Gj-pYc" firstAttribute="top" secondItem="5XH-NR-gzi" secondAttribute="top" constant="15" id="Zo1-od-yAL"/>
+                        <constraint firstAttribute="trailing" secondItem="sCN-A6-CHL" secondAttribute="trailing" constant="30" id="bha-1W-F2T"/>
+                        <constraint firstAttribute="trailing" secondItem="8jQ-hq-eQV" secondAttribute="trailing" constant="30" id="oBU-P1-FBC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9r-LD-9x8">
+                    <rect key="frame" x="0.0" y="164" width="145" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MEN-mP-RvV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.33333333329999998" green="0.68627450980000004" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionCancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ycX-4Z-1ld"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5XH-NR-gzi" secondAttribute="trailing" id="4sV-lk-Kz2"/>
+                <constraint firstItem="5XH-NR-gzi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B8k-6l-eRZ"/>
+                <constraint firstItem="rfi-Os-J3J" firstAttribute="height" secondItem="f9r-LD-9x8" secondAttribute="height" id="CVV-mt-JTb"/>
+                <constraint firstAttribute="bottom" secondItem="f9r-LD-9x8" secondAttribute="bottom" id="PHS-gZ-RuB"/>
+                <constraint firstAttribute="bottom" secondItem="rfi-Os-J3J" secondAttribute="bottom" id="TiV-Kw-pA9"/>
+                <constraint firstAttribute="trailing" secondItem="rfi-Os-J3J" secondAttribute="trailing" id="YFK-CI-T7D"/>
+                <constraint firstItem="rfi-Os-J3J" firstAttribute="width" secondItem="f9r-LD-9x8" secondAttribute="width" id="Zuf-Bo-9oK"/>
+                <constraint firstItem="f9r-LD-9x8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="agm-Ft-HOY"/>
+                <constraint firstItem="rfi-Os-J3J" firstAttribute="leading" secondItem="f9r-LD-9x8" secondAttribute="trailing" constant="1" id="ePG-iz-mLY"/>
+                <constraint firstItem="f9r-LD-9x8" firstAttribute="top" secondItem="5XH-NR-gzi" secondAttribute="bottom" constant="1" id="hft-Kl-l9R"/>
+                <constraint firstItem="5XH-NR-gzi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="poo-2e-uuN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="f9r-LD-9x8" id="2DU-nE-jBk"/>
+                <outlet property="setBtn" destination="rfi-Os-J3J" id="uCO-1n-Gai"/>
+                <outlet property="wifiNameTF" destination="sCN-A6-CHL" id="25S-9K-Ggj"/>
+                <outlet property="wifiPasswordTF" destination="8jQ-hq-eQV" id="Jk5-eu-rEw"/>
+                <outlet property="wifiSetLab" destination="p48-Gj-pYc" id="iAh-8a-dhz"/>
+            </connections>
+            <point key="canvasLocation" x="-490.39999999999998" y="73.763118440779621"/>
+        </view>
+    </objects>
+</document>

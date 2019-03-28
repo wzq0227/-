@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFCRDateListViewController">
+            <connections>
+                <outlet property="dateListTableView" destination="Lx0-kK-T1j" id="rfN-BE-9l9"/>
+                <outlet property="noFileImgView" destination="pdR-jY-LN6" id="VJW-Bj-wKp"/>
+                <outlet property="noFileLabel" destination="FJg-SY-EdF" id="iwz-e1-Ncw"/>
+                <outlet property="noTFCardTipsLabel1" destination="pAP-ax-nrS" id="3Ln-fr-fOs"/>
+                <outlet property="noTFCardTipsLabel2" destination="5Th-xB-9EJ" id="rJ2-bx-swi"/>
+                <outlet property="noTFCardTipsLabel3" destination="QGs-iK-f9d" id="Sbo-fn-GNg"/>
+                <outlet property="noTFCardTipsLabel4" destination="bof-lV-uD0" id="5hJ-xH-Ger"/>
+                <outlet property="noTFCardTitleLabel" destination="N0X-7N-WSs" id="eRx-3a-lxW"/>
+                <outlet property="noTFCardView" destination="7hv-OT-gM3" id="vY7-YZ-Agl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lx0-kK-T1j">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7BG-k5-Nwh"/>
+                        <outlet property="delegate" destination="-1" id="b7g-pJ-6NP"/>
+                    </connections>
+                </tableView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_blankpage_file" translatesAutoresizingMaskIntoConstraints="NO" id="pdR-jY-LN6" userLabel="NoFileImgView">
+                    <rect key="frame" x="80" y="145" width="160" height="109"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pdR-jY-LN6" secondAttribute="height" multiplier="160:109" id="ApM-cP-JV5"/>
+                        <constraint firstAttribute="width" constant="160" id="dd5-Iz-gnn"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无录像文件" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJg-SY-EdF" userLabel="NoFileLabel">
+                    <rect key="frame" x="120" y="264" width="80" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hv-OT-gM3" userLabel="NoTFCardView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_tf_example" translatesAutoresizingMaskIntoConstraints="NO" id="wIF-7X-yha">
+                            <rect key="frame" x="52.5" y="80" width="215" height="82"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="215" id="ThB-nx-8rk"/>
+                                <constraint firstAttribute="width" secondItem="wIF-7X-yha" secondAttribute="height" multiplier="215:82" id="Y8l-wf-s9E"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的摄像机还没有插入存储卡" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0X-7N-WSs" userLabel="TitleLabel">
+                            <rect key="frame" x="47.5" y="192" width="225.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="插入TF(Micro SD)存储卡就能自动录像" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAP-ax-nrS" userLabel="TipsLabel1">
+                            <rect key="frame" x="52.5" y="227.5" width="252.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2d-4k-Lca" userLabel="TipsView1">
+                            <rect key="frame" x="34.5" y="232.5" width="8" height="8"/>
+                            <color key="backgroundColor" red="0.33333333333333331" green="0.68627450980392157" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="o2d-4k-Lca" secondAttribute="height" multiplier="1:1" id="vVc-Gi-DdV"/>
+                                <constraint firstAttribute="width" constant="8" id="zmi-kT-dZf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最大支持32G存储卡" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Th-xB-9EJ" userLabel="TipsLabel2">
+                            <rect key="frame" x="52.5" y="254.5" width="252.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXh-GI-yFD" userLabel="TipsView2">
+                            <rect key="frame" x="34.5" y="259.5" width="8" height="8"/>
+                            <color key="backgroundColor" red="0.33333333329999998" green="0.68627450980000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sXh-GI-yFD" secondAttribute="height" multiplier="1:1" id="0S8-5r-dYG"/>
+                                <constraint firstAttribute="width" constant="8" id="k9X-9k-IjQ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="插入存储卡后未识别出，请重新插拔存储卡" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGs-iK-f9d" userLabel="TipsLabel3">
+                            <rect key="frame" x="52.5" y="281.5" width="252.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihb-Uv-qcn" userLabel="TipsView3">
+                            <rect key="frame" x="34.5" y="286.5" width="8" height="8"/>
+                            <color key="backgroundColor" red="0.33333333329999998" green="0.68627450980000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ihb-Uv-qcn" secondAttribute="height" multiplier="1:1" id="96y-eP-Ftm"/>
+                                <constraint firstAttribute="width" constant="8" id="x9Y-iF-m0j"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确保您的存储卡为FAT32 格式，或将TF卡经PC进行格式化为FAT32后插入设备" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bof-lV-uD0" userLabel="TipsLabel4">
+                            <rect key="frame" x="52.5" y="325" width="252.5" height="50.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KcO-O3-6wd" userLabel="TipsView4">
+                            <rect key="frame" x="34.5" y="330" width="8" height="8"/>
+                            <color key="backgroundColor" red="0.33333333329999998" green="0.68627450980000004" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="8" id="7fY-PR-FdC"/>
+                                <constraint firstAttribute="width" secondItem="KcO-O3-6wd" secondAttribute="height" multiplier="1:1" id="cyO-Bm-esJ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="QGs-iK-f9d" firstAttribute="leading" secondItem="ihb-Uv-qcn" secondAttribute="trailing" constant="10" id="0AQ-uR-lYy"/>
+                        <constraint firstItem="5Th-xB-9EJ" firstAttribute="top" secondItem="pAP-ax-nrS" secondAttribute="bottom" constant="10" id="9uV-5D-bbk"/>
+                        <constraint firstItem="bof-lV-uD0" firstAttribute="trailing" secondItem="QGs-iK-f9d" secondAttribute="trailing" id="Apw-hz-LdO"/>
+                        <constraint firstItem="QGs-iK-f9d" firstAttribute="trailing" secondItem="5Th-xB-9EJ" secondAttribute="trailing" id="Dk3-yY-1Lm"/>
+                        <constraint firstItem="pAP-ax-nrS" firstAttribute="top" secondItem="N0X-7N-WSs" secondAttribute="bottom" constant="15" id="N4A-bp-mnB"/>
+                        <constraint firstItem="N0X-7N-WSs" firstAttribute="centerX" secondItem="7hv-OT-gM3" secondAttribute="centerX" id="NlP-DW-azw"/>
+                        <constraint firstItem="KcO-O3-6wd" firstAttribute="top" secondItem="bof-lV-uD0" secondAttribute="top" constant="5" id="RHl-D9-La6"/>
+                        <constraint firstItem="pAP-ax-nrS" firstAttribute="leading" secondItem="wIF-7X-yha" secondAttribute="leading" id="SYE-gw-7zU"/>
+                        <constraint firstItem="5Th-xB-9EJ" firstAttribute="trailing" secondItem="pAP-ax-nrS" secondAttribute="trailing" id="T64-it-gHd"/>
+                        <constraint firstItem="bof-lV-uD0" firstAttribute="leading" secondItem="QGs-iK-f9d" secondAttribute="leading" id="ULx-fB-uBc"/>
+                        <constraint firstItem="wIF-7X-yha" firstAttribute="top" secondItem="7hv-OT-gM3" secondAttribute="top" constant="80" id="UdC-7r-a3b"/>
+                        <constraint firstItem="bof-lV-uD0" firstAttribute="top" secondItem="QGs-iK-f9d" secondAttribute="bottom" constant="10" id="VHF-Vc-X7x"/>
+                        <constraint firstItem="wIF-7X-yha" firstAttribute="centerX" secondItem="7hv-OT-gM3" secondAttribute="centerX" id="XBT-qv-6hd"/>
+                        <constraint firstAttribute="trailing" secondItem="pAP-ax-nrS" secondAttribute="trailing" constant="15" id="YDH-OI-9qe"/>
+                        <constraint firstItem="o2d-4k-Lca" firstAttribute="top" secondItem="pAP-ax-nrS" secondAttribute="top" constant="5" id="bS5-Ma-75W"/>
+                        <constraint firstItem="sXh-GI-yFD" firstAttribute="top" secondItem="5Th-xB-9EJ" secondAttribute="top" constant="5" id="fnF-hT-rA7"/>
+                        <constraint firstItem="bof-lV-uD0" firstAttribute="leading" secondItem="KcO-O3-6wd" secondAttribute="trailing" constant="10" id="hbZ-ql-kri"/>
+                        <constraint firstItem="5Th-xB-9EJ" firstAttribute="leading" secondItem="sXh-GI-yFD" secondAttribute="trailing" constant="10" id="i2t-yv-vxa"/>
+                        <constraint firstItem="5Th-xB-9EJ" firstAttribute="leading" secondItem="pAP-ax-nrS" secondAttribute="leading" id="kUn-tp-Wph"/>
+                        <constraint firstItem="N0X-7N-WSs" firstAttribute="top" secondItem="wIF-7X-yha" secondAttribute="bottom" constant="30" id="kyp-lT-awc"/>
+                        <constraint firstItem="QGs-iK-f9d" firstAttribute="leading" secondItem="5Th-xB-9EJ" secondAttribute="leading" id="lFx-x8-vqb"/>
+                        <constraint firstItem="QGs-iK-f9d" firstAttribute="top" secondItem="5Th-xB-9EJ" secondAttribute="bottom" constant="10" id="s6q-Dy-Pbi"/>
+                        <constraint firstItem="pAP-ax-nrS" firstAttribute="leading" secondItem="o2d-4k-Lca" secondAttribute="trailing" constant="10" id="vT4-Y1-zPF"/>
+                        <constraint firstItem="ihb-Uv-qcn" firstAttribute="top" secondItem="QGs-iK-f9d" secondAttribute="top" constant="5" id="xRM-TE-Y0W"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7hv-OT-gM3" secondAttribute="bottom" id="0Ou-Vv-TlG"/>
+                <constraint firstItem="7hv-OT-gM3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0WN-BR-2fQ"/>
+                <constraint firstItem="7hv-OT-gM3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9ph-vX-Qqa"/>
+                <constraint firstAttribute="trailing" secondItem="7hv-OT-gM3" secondAttribute="trailing" id="CMs-eN-RW4"/>
+                <constraint firstItem="FJg-SY-EdF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CZS-Aa-qSu"/>
+                <constraint firstItem="Lx0-kK-T1j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ogh-fQ-TFi"/>
+                <constraint firstItem="pdR-jY-LN6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UIN-ag-nkt"/>
+                <constraint firstItem="FJg-SY-EdF" firstAttribute="top" secondItem="pdR-jY-LN6" secondAttribute="bottom" constant="10" id="VIm-Sq-TcW"/>
+                <constraint firstAttribute="bottom" secondItem="Lx0-kK-T1j" secondAttribute="bottom" id="cOa-Xf-ahA"/>
+                <constraint firstItem="pdR-jY-LN6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="145" id="uyu-xx-drg"/>
+                <constraint firstAttribute="trailing" secondItem="Lx0-kK-T1j" secondAttribute="trailing" id="wO2-Se-MAW"/>
+                <constraint firstItem="Lx0-kK-T1j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yOy-wE-JnW"/>
+            </constraints>
+            <point key="canvasLocation" x="52.5" y="48.591549295774648"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_blankpage_file" width="160" height="109"/>
+        <image name="img_tf_example" width="215" height="82"/>
+    </resources>
+</document>

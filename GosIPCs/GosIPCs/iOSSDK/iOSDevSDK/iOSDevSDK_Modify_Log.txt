@@ -1,0 +1,45 @@
+iOSDevSDK 代码修改 log
+
+
+【2019-03-05】：Modify by shenyuanluo
+1、添加 SD 卡回放操作结果回调
+
+
+【2019-02-28】：Modify by shenyuanluo
+1、添加 SD 卡数据流停止接口
+
+
+【2019-02-26】：Modify by shenyuanluo
+1、修改打开/关闭数据流接口，添加数据流类型指定支持
+
+
+【2019-02-14】：Modify by shenyuanluo
+1、添加 SD 卡录像（视频流）回放获取预览图接口
+
+
+【2019-01-15】：Modify by shenyuanluo
+1、添加发送(实时)对讲语音音频数据接口
+
+
+【2019-01-07】：Modify by shenyuanluo
+1、添加 TF 卡媒体文件开始下载结果回调
+
+
+【2019-01-04】：Modify by shenyuanluo
+1、添加‘停止’下载 TF 卡录制文件接口
+
+
+【2019-01-03】：Modify by shenyuanluo
+1、修改 TF 卡录制文件下载回调代理为：iOSDevDownloadDelegate
+
+
+【2018-12-29】：Modify by shenyuanluo
+1、解决还未初始化‘传输协议和服务器地址’就开始创建设备连接而导致底层 Crash 问题。
+
+
+【2018-12-25】：Modify by shenyuanluo
+1、优化单例接口：shareDevSDK
+
+
+【2018-12-24】：Modify by shenyuanluo
+1、添加断开所有设备连接接口

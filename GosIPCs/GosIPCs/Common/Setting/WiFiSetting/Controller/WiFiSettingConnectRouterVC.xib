@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WiFiSettingConnectRouterVC">
+            <connections>
+                <outlet property="tipGifImg" destination="rAg-q7-YZr" id="rqP-QR-yYG"/>
+                <outlet property="tipsLab" destination="sia-r8-eAq" id="5v6-k2-ThO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sia-r8-eAq">
+                    <rect key="frame" x="10" y="215" width="355" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rAg-q7-YZr">
+                    <rect key="frame" x="20" y="283" width="335" height="101"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rAg-q7-YZr" secondAttribute="height" multiplier="314:95" id="DvP-UG-jB7"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rAg-q7-YZr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Avb-1C-lyn"/>
+                <constraint firstAttribute="trailing" secondItem="rAg-q7-YZr" secondAttribute="trailing" constant="20" id="KQa-up-ikY"/>
+                <constraint firstItem="sia-r8-eAq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="PIp-kL-wWM"/>
+                <constraint firstItem="rAg-q7-YZr" firstAttribute="top" secondItem="sia-r8-eAq" secondAttribute="bottom" constant="50" id="WDI-H6-Wzr"/>
+                <constraint firstAttribute="trailing" secondItem="sia-r8-eAq" secondAttribute="trailing" constant="10" id="h1z-Es-BFC"/>
+                <constraint firstItem="rAg-q7-YZr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="o73-jj-F9k"/>
+                <constraint firstItem="rAg-q7-YZr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wob-S4-jpT"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

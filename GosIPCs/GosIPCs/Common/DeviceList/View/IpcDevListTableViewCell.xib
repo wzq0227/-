@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="218" id="KGk-i7-Jjw" customClass="IpcDevListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="217.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-dy-IZq">
+                        <rect key="frame" x="20" y="20" width="336" height="157.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dev_cell_play" translatesAutoresizingMaskIntoConstraints="NO" id="Akz-ax-8TN">
+                        <rect key="frame" x="168" y="89" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="8ki-ei-vBG"/>
+                            <constraint firstAttribute="width" constant="40" id="cch-od-ntk"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJH-QY-dUz" userLabel="OffLineView">
+                        <rect key="frame" x="20" y="20" width="336" height="157.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75Z-Dr-ZL9" userLabel="bottomView">
+                        <rect key="frame" x="20" y="177.5" width="336" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7A-ye-JSm" userLabel="MessageButton" customClass="EnlargeClickButton">
+                                <rect key="frame" x="193" y="9" width="22" height="22"/>
+                                <state key="normal" image="icon_message"/>
+                                <connections>
+                                    <action selector="devMessageBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2NW-YD-0So"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3i-Wf-P1F" userLabel="CloudButton" customClass="EnlargeClickButton">
+                                <rect key="frame" x="230" y="9" width="22" height="22"/>
+                                <state key="normal" image="dev_cell_icon_cloud"/>
+                                <connections>
+                                    <action selector="devCloudBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kn9-by-Kzk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7z-QL-ey4" userLabel="TFCardButton" customClass="EnlargeClickButton">
+                                <rect key="frame" x="267" y="9" width="22" height="22"/>
+                                <state key="normal" image="icon_tf"/>
+                                <connections>
+                                    <action selector="devTFCardBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ieG-hV-799"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1un-rO-t9x" userLabel="SettingButton" customClass="EnlargeClickButton">
+                                <rect key="frame" x="304" y="9" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1un-rO-t9x" secondAttribute="height" multiplier="1:1" id="OTW-kL-oQS"/>
+                                    <constraint firstAttribute="width" constant="22" id="ZQp-tu-YVp"/>
+                                </constraints>
+                                <state key="normal" image="icon_setting"/>
+                                <connections>
+                                    <action selector="devSettingBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xaF-ec-rZt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqZ-t2-zrY" userLabel="NameLabel">
+                                <rect key="frame" x="0.0" y="13" width="193" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l7A-ye-JSm" firstAttribute="width" secondItem="l7A-ye-JSm" secondAttribute="height" multiplier="1:1" id="5hQ-ia-dfJ"/>
+                            <constraint firstItem="K3i-Wf-P1F" firstAttribute="centerY" secondItem="w7z-QL-ey4" secondAttribute="centerY" id="5lu-hU-865"/>
+                            <constraint firstItem="w7z-QL-ey4" firstAttribute="centerY" secondItem="1un-rO-t9x" secondAttribute="centerY" id="9Pl-df-Xu8"/>
+                            <constraint firstItem="tqZ-t2-zrY" firstAttribute="centerY" secondItem="75Z-Dr-ZL9" secondAttribute="centerY" id="AIZ-El-CRP"/>
+                            <constraint firstItem="w7z-QL-ey4" firstAttribute="width" secondItem="1un-rO-t9x" secondAttribute="width" id="Bsh-MB-9gR"/>
+                            <constraint firstItem="K3i-Wf-P1F" firstAttribute="width" secondItem="w7z-QL-ey4" secondAttribute="width" id="LYq-oo-MmA"/>
+                            <constraint firstAttribute="trailing" secondItem="1un-rO-t9x" secondAttribute="trailing" constant="10" id="PYO-XY-h1D"/>
+                            <constraint firstItem="1un-rO-t9x" firstAttribute="centerY" secondItem="75Z-Dr-ZL9" secondAttribute="centerY" id="Pvq-wc-m1v"/>
+                            <constraint firstItem="1un-rO-t9x" firstAttribute="leading" secondItem="w7z-QL-ey4" secondAttribute="trailing" constant="15" id="ZVC-h1-cqE"/>
+                            <constraint firstItem="l7A-ye-JSm" firstAttribute="width" secondItem="1un-rO-t9x" secondAttribute="width" id="a3W-y0-X8a"/>
+                            <constraint firstItem="w7z-QL-ey4" firstAttribute="leading" secondItem="l7A-ye-JSm" secondAttribute="trailing" constant="52" id="exa-48-YTs"/>
+                            <constraint firstItem="w7z-QL-ey4" firstAttribute="width" secondItem="w7z-QL-ey4" secondAttribute="height" multiplier="1:1" id="p9Y-0J-Kl3"/>
+                            <constraint firstItem="w7z-QL-ey4" firstAttribute="leading" secondItem="K3i-Wf-P1F" secondAttribute="trailing" constant="15" id="pt6-ni-Uk6"/>
+                            <constraint firstItem="K3i-Wf-P1F" firstAttribute="width" secondItem="K3i-Wf-P1F" secondAttribute="height" multiplier="1:1" id="qfA-Qu-lNJ"/>
+                            <constraint firstItem="tqZ-t2-zrY" firstAttribute="leading" secondItem="75Z-Dr-ZL9" secondAttribute="leading" id="s0l-3f-ha7"/>
+                            <constraint firstItem="l7A-ye-JSm" firstAttribute="centerY" secondItem="1un-rO-t9x" secondAttribute="centerY" id="x0G-nN-1kd"/>
+                            <constraint firstItem="l7A-ye-JSm" firstAttribute="leading" secondItem="tqZ-t2-zrY" secondAttribute="trailing" id="yeV-OM-31l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kfa-dy-IZq" secondAttribute="trailing" constant="20" id="02e-aT-VPI"/>
+                    <constraint firstAttribute="bottom" secondItem="kfa-dy-IZq" secondAttribute="bottom" constant="40" id="KC0-Rb-jZL"/>
+                    <constraint firstItem="QJH-QY-dUz" firstAttribute="height" secondItem="kfa-dy-IZq" secondAttribute="height" id="PNZ-RF-ZzZ"/>
+                    <constraint firstItem="Akz-ax-8TN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QqC-8d-bxw"/>
+                    <constraint firstItem="QJH-QY-dUz" firstAttribute="centerY" secondItem="kfa-dy-IZq" secondAttribute="centerY" id="Uhz-sA-w1v"/>
+                    <constraint firstItem="QJH-QY-dUz" firstAttribute="width" secondItem="kfa-dy-IZq" secondAttribute="width" id="YUH-hs-YgH"/>
+                    <constraint firstItem="75Z-Dr-ZL9" firstAttribute="top" secondItem="kfa-dy-IZq" secondAttribute="bottom" id="eJq-L3-8qP"/>
+                    <constraint firstItem="kfa-dy-IZq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="gdL-ul-DV8"/>
+                    <constraint firstItem="kfa-dy-IZq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="geQ-x9-X2b"/>
+                    <constraint firstItem="75Z-Dr-ZL9" firstAttribute="leading" secondItem="kfa-dy-IZq" secondAttribute="leading" id="hXZ-Pz-ZQ6"/>
+                    <constraint firstAttribute="bottom" secondItem="75Z-Dr-ZL9" secondAttribute="bottom" id="jr0-k8-qTi"/>
+                    <constraint firstItem="QJH-QY-dUz" firstAttribute="centerX" secondItem="kfa-dy-IZq" secondAttribute="centerX" id="rmy-hD-n3W"/>
+                    <constraint firstItem="75Z-Dr-ZL9" firstAttribute="trailing" secondItem="kfa-dy-IZq" secondAttribute="trailing" id="sHq-BM-4MF"/>
+                    <constraint firstItem="Akz-ax-8TN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ueq-uE-Bk8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="devCloudBtn" destination="K3i-Wf-P1F" id="H6F-3V-yG8"/>
+                <outlet property="devCoverImgView" destination="kfa-dy-IZq" id="bwo-Cy-U1j"/>
+                <outlet property="devMessageBtn" destination="l7A-ye-JSm" id="l4Z-7A-gOM"/>
+                <outlet property="devNameLabel" destination="tqZ-t2-zrY" id="q9Y-Pl-TAY"/>
+                <outlet property="devOffLineView" destination="QJH-QY-dUz" id="pub-Hy-E3V"/>
+                <outlet property="devSettingBtn" destination="1un-rO-t9x" id="h8a-5s-lJt"/>
+                <outlet property="devTFCardBtn" destination="w7z-QL-ey4" id="NLy-vp-DWH"/>
+                <outlet property="msgBtnRightMargin" destination="exa-48-YTs" id="1ZE-W0-S41"/>
+            </connections>
+            <point key="canvasLocation" x="65.599999999999994" y="86.35682158920541"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Cover" width="510" height="271.5"/>
+        <image name="dev_cell_icon_cloud" width="24" height="24"/>
+        <image name="dev_cell_play" width="40" height="40"/>
+        <image name="icon_message" width="24" height="24"/>
+        <image name="icon_setting" width="24" height="24"/>
+        <image name="icon_tf" width="24" height="24"/>
+    </resources>
+</document>

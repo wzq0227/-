@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddSOSVC">
+            <connections>
+                <outlet property="addBtn" destination="69Y-9e-tS5" id="Wdf-h9-Xqt"/>
+                <outlet property="gifImg" destination="6Qr-Sp-qjb" id="xgu-YA-wiY"/>
+                <outlet property="tips1Lab" destination="rhL-o5-nDI" id="pV3-7Q-jSH"/>
+                <outlet property="tips2Lab" destination="JS5-H4-29t" id="pPU-90-Osu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.使设备处于网关的有效通讯距离内" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhL-o5-nDI">
+                    <rect key="frame" x="20" y="284.5" width="335" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.请点击“开始添加”，然后请按上图中动画演示触发设备" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS5-H4-29t">
+                    <rect key="frame" x="20" y="326.5" width="340" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69Y-9e-tS5">
+                    <rect key="frame" x="30" y="547" width="315" height="40"/>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.68627450980392157" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="L6c-dh-BpE"/>
+                    </constraints>
+                    <state key="normal" title="开始添加"/>
+                    <connections>
+                        <action selector="actionStartClick:" destination="-1" eventType="touchUpInside" id="Wcm-DJ-m2e"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Qr-Sp-qjb">
+                    <rect key="frame" x="20" y="25" width="335" height="229.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6Qr-Sp-qjb" secondAttribute="height" multiplier="301:206" id="4cy-9V-j1A"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JS5-H4-29t" firstAttribute="leading" secondItem="6Qr-Sp-qjb" secondAttribute="leading" id="1JQ-WG-0rt"/>
+                <constraint firstAttribute="trailing" secondItem="6Qr-Sp-qjb" secondAttribute="trailing" constant="20" id="7eU-cq-aZI"/>
+                <constraint firstItem="rhL-o5-nDI" firstAttribute="leading" secondItem="6Qr-Sp-qjb" secondAttribute="leading" id="DFY-hp-qzi"/>
+                <constraint firstItem="6Qr-Sp-qjb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="SO0-O5-NxA"/>
+                <constraint firstItem="6Qr-Sp-qjb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="WJl-Qq-01e"/>
+                <constraint firstAttribute="trailing" secondItem="JS5-H4-29t" secondAttribute="trailing" constant="15" id="Xfj-RQ-Oip"/>
+                <constraint firstItem="JS5-H4-29t" firstAttribute="top" secondItem="rhL-o5-nDI" secondAttribute="bottom" constant="25" id="bSj-E4-w1P"/>
+                <constraint firstAttribute="trailing" secondItem="rhL-o5-nDI" secondAttribute="trailing" constant="20" id="l1E-fE-Gvx"/>
+                <constraint firstItem="69Y-9e-tS5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="p08-sO-W5u"/>
+                <constraint firstItem="JS5-H4-29t" firstAttribute="leading" secondItem="rhL-o5-nDI" secondAttribute="leading" id="qIr-Lg-LFE"/>
+                <constraint firstAttribute="bottom" secondItem="69Y-9e-tS5" secondAttribute="bottom" constant="80" id="sBj-kw-eea"/>
+                <constraint firstAttribute="trailing" secondItem="69Y-9e-tS5" secondAttribute="trailing" constant="30" id="tYd-US-Sdb"/>
+                <constraint firstItem="rhL-o5-nDI" firstAttribute="top" secondItem="6Qr-Sp-qjb" secondAttribute="bottom" constant="30" id="uvT-ug-kOC"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

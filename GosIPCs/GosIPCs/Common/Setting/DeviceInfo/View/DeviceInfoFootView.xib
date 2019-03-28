@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DeviceInfoFootView">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbF-yr-vIW">
+                    <rect key="frame" x="0.0" y="44" width="329" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="d2m-Ah-Wpy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="格式化SD卡">
+                        <color key="titleColor" red="1" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AbF-yr-vIW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LmL-ah-kAn"/>
+                <constraint firstAttribute="trailing" secondItem="AbF-yr-vIW" secondAttribute="trailing" id="ow2-w8-Rfy"/>
+                <constraint firstItem="AbF-yr-vIW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="r9n-v9-ikU"/>
+                <constraint firstItem="AbF-yr-vIW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="utN-wI-35x"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="formatSDcardBtn" destination="AbF-yr-vIW" id="354-1w-oiR"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="3.5982008995502253"/>
+        </view>
+    </objects>
+</document>

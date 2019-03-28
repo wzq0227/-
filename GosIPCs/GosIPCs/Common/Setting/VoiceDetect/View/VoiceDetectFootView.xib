@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VoiceDetectFootView">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“声音检测”开启后，如果摄像头检测到声音则会进行短暂录像，此录像方式在TF卡里面的代表图标为" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiE-aH-ewN">
+                    <rect key="frame" x="10" y="10" width="316" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GiE-aH-ewN" secondAttribute="trailing" constant="10" id="45e-w1-itI"/>
+                <constraint firstItem="GiE-aH-ewN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="hdF-0K-JDt"/>
+                <constraint firstAttribute="bottom" secondItem="GiE-aH-ewN" secondAttribute="bottom" constant="10" id="hiR-oR-xAf"/>
+                <constraint firstItem="GiE-aH-ewN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="huD-Pr-TTI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tipsLab" destination="GiE-aH-ewN" id="OMO-qV-nrQ"/>
+            </connections>
+            <point key="canvasLocation" x="107.2" y="386.8065967016492"/>
+        </view>
+    </objects>
+</document>
